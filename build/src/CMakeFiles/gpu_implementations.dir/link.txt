@@ -1,0 +1,2 @@
+/usr/bin/ar qc libgpu_implementations.a CMakeFiles/gpu_implementations.dir/gpu/cuda_kernels.cu.o CMakeFiles/gpu_implementations.dir/gpu/rapids_wrapper.cpp.o
+/usr/bin/ranlib libgpu_implementations.a
