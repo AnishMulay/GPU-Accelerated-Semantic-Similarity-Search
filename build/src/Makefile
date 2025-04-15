@@ -182,6 +182,30 @@ cpu/brute_force.cpp.s:
 	cd /home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/cpu_implementations.dir/build.make src/CMakeFiles/cpu_implementations.dir/cpu/brute_force.cpp.s
 .PHONY : cpu/brute_force.cpp.s
 
+cpu/brute_force_omp.o: cpu/brute_force_omp.cpp.o
+.PHONY : cpu/brute_force_omp.o
+
+# target to build an object file
+cpu/brute_force_omp.cpp.o:
+	cd /home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/cpu_implementations.dir/build.make src/CMakeFiles/cpu_implementations.dir/cpu/brute_force_omp.cpp.o
+.PHONY : cpu/brute_force_omp.cpp.o
+
+cpu/brute_force_omp.i: cpu/brute_force_omp.cpp.i
+.PHONY : cpu/brute_force_omp.i
+
+# target to preprocess a source file
+cpu/brute_force_omp.cpp.i:
+	cd /home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/cpu_implementations.dir/build.make src/CMakeFiles/cpu_implementations.dir/cpu/brute_force_omp.cpp.i
+.PHONY : cpu/brute_force_omp.cpp.i
+
+cpu/brute_force_omp.s: cpu/brute_force_omp.cpp.s
+.PHONY : cpu/brute_force_omp.s
+
+# target to generate assembly for a file
+cpu/brute_force_omp.cpp.s:
+	cd /home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/cpu_implementations.dir/build.make src/CMakeFiles/cpu_implementations.dir/cpu/brute_force_omp.cpp.s
+.PHONY : cpu/brute_force_omp.cpp.s
+
 cpu/faiss_wrapper.o: cpu/faiss_wrapper.cpp.o
 .PHONY : cpu/faiss_wrapper.o
 
@@ -364,6 +388,9 @@ help:
 	@echo "... cpu/brute_force.o"
 	@echo "... cpu/brute_force.i"
 	@echo "... cpu/brute_force.s"
+	@echo "... cpu/brute_force_omp.o"
+	@echo "... cpu/brute_force_omp.i"
+	@echo "... cpu/brute_force_omp.s"
 	@echo "... cpu/faiss_wrapper.o"
 	@echo "... cpu/faiss_wrapper.i"
 	@echo "... cpu/faiss_wrapper.s"

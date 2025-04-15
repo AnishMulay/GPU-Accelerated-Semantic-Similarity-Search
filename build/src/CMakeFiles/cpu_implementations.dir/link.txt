@@ -1,2 +1,2 @@
-/usr/bin/ar qc libcpu_implementations.a CMakeFiles/cpu_implementations.dir/cpu/brute_force.cpp.o CMakeFiles/cpu_implementations.dir/cpu/faiss_wrapper.cpp.o
+/usr/bin/ar qc libcpu_implementations.a CMakeFiles/cpu_implementations.dir/cpu/brute_force.cpp.o CMakeFiles/cpu_implementations.dir/cpu/brute_force_omp.cpp.o CMakeFiles/cpu_implementations.dir/cpu/faiss_wrapper.cpp.o
 /usr/bin/ranlib libcpu_implementations.a

@@ -152,5 +152,5 @@ set(CMAKE_DEPEND_INFO_FILES
   "src/CMakeFiles/gpu_implementations.dir/DependInfo.cmake"
   "tests/CMakeFiles/test_similarity.dir/DependInfo.cmake"
   "tests/CMakeFiles/test_vector_data.dir/DependInfo.cmake"
-  "tests/CMakeFiles/test_brute_force.dir/DependInfo.cmake"
+  "tests/CMakeFiles/test_brute_force_comparison.dir/DependInfo.cmake"
   )

@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/cpu_implementations.dir/cpu/brute_force.cpp.o"
   "CMakeFiles/cpu_implementations.dir/cpu/brute_force.cpp.o.d"
+  "CMakeFiles/cpu_implementations.dir/cpu/brute_force_omp.cpp.o"
+  "CMakeFiles/cpu_implementations.dir/cpu/brute_force_omp.cpp.o.d"
   "CMakeFiles/cpu_implementations.dir/cpu/faiss_wrapper.cpp.o"
   "CMakeFiles/cpu_implementations.dir/cpu/faiss_wrapper.cpp.o.d"
   "libcpu_implementations.a"

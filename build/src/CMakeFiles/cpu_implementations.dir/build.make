@@ -83,10 +83,24 @@ src/CMakeFiles/cpu_implementations.dir/cpu/brute_force.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/cpu_implementations.dir/cpu/brute_force.cpp.s"
 	cd /home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/src/cpu/brute_force.cpp -o CMakeFiles/cpu_implementations.dir/cpu/brute_force.cpp.s
 
+src/CMakeFiles/cpu_implementations.dir/cpu/brute_force_omp.cpp.o: src/CMakeFiles/cpu_implementations.dir/flags.make
+src/CMakeFiles/cpu_implementations.dir/cpu/brute_force_omp.cpp.o: /home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/src/cpu/brute_force_omp.cpp
+src/CMakeFiles/cpu_implementations.dir/cpu/brute_force_omp.cpp.o: src/CMakeFiles/cpu_implementations.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/CMakeFiles/cpu_implementations.dir/cpu/brute_force_omp.cpp.o"
+	cd /home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/cpu_implementations.dir/cpu/brute_force_omp.cpp.o -MF CMakeFiles/cpu_implementations.dir/cpu/brute_force_omp.cpp.o.d -o CMakeFiles/cpu_implementations.dir/cpu/brute_force_omp.cpp.o -c /home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/src/cpu/brute_force_omp.cpp
+
+src/CMakeFiles/cpu_implementations.dir/cpu/brute_force_omp.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/cpu_implementations.dir/cpu/brute_force_omp.cpp.i"
+	cd /home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/src/cpu/brute_force_omp.cpp > CMakeFiles/cpu_implementations.dir/cpu/brute_force_omp.cpp.i
+
+src/CMakeFiles/cpu_implementations.dir/cpu/brute_force_omp.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/cpu_implementations.dir/cpu/brute_force_omp.cpp.s"
+	cd /home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/src/cpu/brute_force_omp.cpp -o CMakeFiles/cpu_implementations.dir/cpu/brute_force_omp.cpp.s
+
 src/CMakeFiles/cpu_implementations.dir/cpu/faiss_wrapper.cpp.o: src/CMakeFiles/cpu_implementations.dir/flags.make
 src/CMakeFiles/cpu_implementations.dir/cpu/faiss_wrapper.cpp.o: /home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/src/cpu/faiss_wrapper.cpp
 src/CMakeFiles/cpu_implementations.dir/cpu/faiss_wrapper.cpp.o: src/CMakeFiles/cpu_implementations.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/CMakeFiles/cpu_implementations.dir/cpu/faiss_wrapper.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object src/CMakeFiles/cpu_implementations.dir/cpu/faiss_wrapper.cpp.o"
 	cd /home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/cpu_implementations.dir/cpu/faiss_wrapper.cpp.o -MF CMakeFiles/cpu_implementations.dir/cpu/faiss_wrapper.cpp.o.d -o CMakeFiles/cpu_implementations.dir/cpu/faiss_wrapper.cpp.o -c /home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/src/cpu/faiss_wrapper.cpp
 
 src/CMakeFiles/cpu_implementations.dir/cpu/faiss_wrapper.cpp.i: cmake_force
@@ -100,16 +114,18 @@ src/CMakeFiles/cpu_implementations.dir/cpu/faiss_wrapper.cpp.s: cmake_force
 # Object files for target cpu_implementations
 cpu_implementations_OBJECTS = \
 "CMakeFiles/cpu_implementations.dir/cpu/brute_force.cpp.o" \
+"CMakeFiles/cpu_implementations.dir/cpu/brute_force_omp.cpp.o" \
 "CMakeFiles/cpu_implementations.dir/cpu/faiss_wrapper.cpp.o"
 
 # External object files for target cpu_implementations
 cpu_implementations_EXTERNAL_OBJECTS =
 
 src/libcpu_implementations.a: src/CMakeFiles/cpu_implementations.dir/cpu/brute_force.cpp.o
+src/libcpu_implementations.a: src/CMakeFiles/cpu_implementations.dir/cpu/brute_force_omp.cpp.o
 src/libcpu_implementations.a: src/CMakeFiles/cpu_implementations.dir/cpu/faiss_wrapper.cpp.o
 src/libcpu_implementations.a: src/CMakeFiles/cpu_implementations.dir/build.make
 src/libcpu_implementations.a: src/CMakeFiles/cpu_implementations.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library libcpu_implementations.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX static library libcpu_implementations.a"
 	cd /home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/build/src && $(CMAKE_COMMAND) -P CMakeFiles/cpu_implementations.dir/cmake_clean_target.cmake
 	cd /home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/build/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/cpu_implementations.dir/link.txt --verbose=$(VERBOSE)
 
