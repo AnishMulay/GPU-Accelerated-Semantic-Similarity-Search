@@ -11,3 +11,10 @@ target_link_libraries(test_vector_data PRIVATE
     similarity_utils
     ${CUDA_LIBRARIES}
 )
+
+add_executable(test_brute_force test_brute_force.cpp)
+target_link_libraries(test_brute_force PRIVATE 
+    similarity_utils
+    cpu_implementations
+    ${CUDA_LIBRARIES}
+)

@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/test_brute_force.dir/test_brute_force.cpp.o -o test_brute_force  ../src/libsimilarity_utils.a ../src/libcpu_implementations.a 

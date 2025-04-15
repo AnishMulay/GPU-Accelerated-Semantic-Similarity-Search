@@ -104,6 +104,7 @@ src/clean: src/CMakeFiles/gpu_implementations.dir/clean
 # Recursive "all" directory target.
 tests/all: tests/CMakeFiles/test_similarity.dir/all
 tests/all: tests/CMakeFiles/test_vector_data.dir/all
+tests/all: tests/CMakeFiles/test_brute_force.dir/all
 .PHONY : tests/all
 
 # Recursive "preinstall" directory target.
@@ -113,6 +114,7 @@ tests/preinstall:
 # Recursive "clean" directory target.
 tests/clean: tests/CMakeFiles/test_similarity.dir/clean
 tests/clean: tests/CMakeFiles/test_vector_data.dir/clean
+tests/clean: tests/CMakeFiles/test_brute_force.dir/clean
 .PHONY : tests/clean
 
 #=============================================================================
@@ -230,7 +232,7 @@ tests/CMakeFiles/test_similarity.dir/all: src/CMakeFiles/cpu_implementations.dir
 tests/CMakeFiles/test_similarity.dir/all: src/CMakeFiles/gpu_implementations.dir/all
 	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_similarity.dir/build.make tests/CMakeFiles/test_similarity.dir/depend
 	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_similarity.dir/build.make tests/CMakeFiles/test_similarity.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/build/CMakeFiles --progress-num=14,15 "Built target test_similarity"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/build/CMakeFiles --progress-num=16,17 "Built target test_similarity"
 .PHONY : tests/CMakeFiles/test_similarity.dir/all
 
 # Build rule for subdir invocation for target.
@@ -256,7 +258,7 @@ tests/CMakeFiles/test_similarity.dir/clean:
 tests/CMakeFiles/test_vector_data.dir/all: src/CMakeFiles/similarity_utils.dir/all
 	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_vector_data.dir/build.make tests/CMakeFiles/test_vector_data.dir/depend
 	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_vector_data.dir/build.make tests/CMakeFiles/test_vector_data.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/build/CMakeFiles --progress-num=16,17 "Built target test_vector_data"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/build/CMakeFiles --progress-num=18,19 "Built target test_vector_data"
 .PHONY : tests/CMakeFiles/test_vector_data.dir/all
 
 # Build rule for subdir invocation for target.
@@ -274,6 +276,33 @@ test_vector_data: tests/CMakeFiles/test_vector_data.dir/rule
 tests/CMakeFiles/test_vector_data.dir/clean:
 	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_vector_data.dir/build.make tests/CMakeFiles/test_vector_data.dir/clean
 .PHONY : tests/CMakeFiles/test_vector_data.dir/clean
+
+#=============================================================================
+# Target rules for target tests/CMakeFiles/test_brute_force.dir
+
+# All Build rule for target.
+tests/CMakeFiles/test_brute_force.dir/all: src/CMakeFiles/similarity_utils.dir/all
+tests/CMakeFiles/test_brute_force.dir/all: src/CMakeFiles/cpu_implementations.dir/all
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_brute_force.dir/build.make tests/CMakeFiles/test_brute_force.dir/depend
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_brute_force.dir/build.make tests/CMakeFiles/test_brute_force.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/build/CMakeFiles --progress-num=14,15 "Built target test_brute_force"
+.PHONY : tests/CMakeFiles/test_brute_force.dir/all
+
+# Build rule for subdir invocation for target.
+tests/CMakeFiles/test_brute_force.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/build/CMakeFiles 10
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/test_brute_force.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/build/CMakeFiles 0
+.PHONY : tests/CMakeFiles/test_brute_force.dir/rule
+
+# Convenience name for target.
+test_brute_force: tests/CMakeFiles/test_brute_force.dir/rule
+.PHONY : test_brute_force
+
+# clean rule for target.
+tests/CMakeFiles/test_brute_force.dir/clean:
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_brute_force.dir/build.make tests/CMakeFiles/test_brute_force.dir/clean
+.PHONY : tests/CMakeFiles/test_brute_force.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

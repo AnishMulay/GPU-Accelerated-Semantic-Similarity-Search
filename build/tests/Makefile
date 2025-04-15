@@ -144,6 +144,44 @@ test_vector_data/fast:
 	cd /home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_vector_data.dir/build.make tests/CMakeFiles/test_vector_data.dir/build
 .PHONY : test_vector_data/fast
 
+# Convenience name for target.
+tests/CMakeFiles/test_brute_force.dir/rule:
+	cd /home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/test_brute_force.dir/rule
+.PHONY : tests/CMakeFiles/test_brute_force.dir/rule
+
+# Convenience name for target.
+test_brute_force: tests/CMakeFiles/test_brute_force.dir/rule
+.PHONY : test_brute_force
+
+# fast build rule for target.
+test_brute_force/fast:
+	cd /home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_brute_force.dir/build.make tests/CMakeFiles/test_brute_force.dir/build
+.PHONY : test_brute_force/fast
+
+test_brute_force.o: test_brute_force.cpp.o
+.PHONY : test_brute_force.o
+
+# target to build an object file
+test_brute_force.cpp.o:
+	cd /home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_brute_force.dir/build.make tests/CMakeFiles/test_brute_force.dir/test_brute_force.cpp.o
+.PHONY : test_brute_force.cpp.o
+
+test_brute_force.i: test_brute_force.cpp.i
+.PHONY : test_brute_force.i
+
+# target to preprocess a source file
+test_brute_force.cpp.i:
+	cd /home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_brute_force.dir/build.make tests/CMakeFiles/test_brute_force.dir/test_brute_force.cpp.i
+.PHONY : test_brute_force.cpp.i
+
+test_brute_force.s: test_brute_force.cpp.s
+.PHONY : test_brute_force.s
+
+# target to generate assembly for a file
+test_brute_force.cpp.s:
+	cd /home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_brute_force.dir/build.make tests/CMakeFiles/test_brute_force.dir/test_brute_force.cpp.s
+.PHONY : test_brute_force.cpp.s
+
 test_similarity.o: test_similarity.cpp.o
 .PHONY : test_similarity.o
 
@@ -200,8 +238,12 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... test_brute_force"
 	@echo "... test_similarity"
 	@echo "... test_vector_data"
+	@echo "... test_brute_force.o"
+	@echo "... test_brute_force.i"
+	@echo "... test_brute_force.s"
 	@echo "... test_similarity.o"
 	@echo "... test_similarity.i"
 	@echo "... test_similarity.s"

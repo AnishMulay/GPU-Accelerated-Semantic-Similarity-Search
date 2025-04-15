@@ -194,6 +194,19 @@ test_vector_data/fast:
 	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_vector_data.dir/build.make tests/CMakeFiles/test_vector_data.dir/build
 .PHONY : test_vector_data/fast
 
+#=============================================================================
+# Target rules for targets named test_brute_force
+
+# Build rule for target.
+test_brute_force: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_brute_force
+.PHONY : test_brute_force
+
+# fast build rule for target.
+test_brute_force/fast:
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_brute_force.dir/build.make tests/CMakeFiles/test_brute_force.dir/build
+.PHONY : test_brute_force/fast
+
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -230,6 +243,7 @@ help:
 	@echo "... gpu_implementations"
 	@echo "... semantic_search"
 	@echo "... similarity_utils"
+	@echo "... test_brute_force"
 	@echo "... test_similarity"
 	@echo "... test_vector_data"
 	@echo "... src/main.o"
