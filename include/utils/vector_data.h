@@ -18,7 +18,7 @@ public:
     size_t getDimensions() const { return m_dimensions; }
     
     // Get number of vectors
-    size_t getSize() const { return m_vectors.size(); }
+    size_t getSize() const { return m_vectors.size() / m_dimensions; }
     
     // Access a specific vector
     const float* getVector(size_t index) const;
