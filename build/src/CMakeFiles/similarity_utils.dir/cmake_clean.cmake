@@ -5,6 +5,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/similarity_utils.dir/utils/metrics.cpp.o.d"
   "CMakeFiles/similarity_utils.dir/utils/timer.cpp.o"
   "CMakeFiles/similarity_utils.dir/utils/timer.cpp.o.d"
+  "CMakeFiles/similarity_utils.dir/utils/vector_data.cpp.o"
+  "CMakeFiles/similarity_utils.dir/utils/vector_data.cpp.o.d"
   "libsimilarity_utils.a"
   "libsimilarity_utils.pdb"
 )

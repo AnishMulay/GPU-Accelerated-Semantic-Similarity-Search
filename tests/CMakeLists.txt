@@ -5,3 +5,9 @@ target_link_libraries(test_similarity PRIVATE
     gpu_implementations
     ${CUDA_LIBRARIES}
 )
+
+add_executable(test_vector_data test_vector_data.cpp)
+target_link_libraries(test_vector_data PRIVATE 
+    similarity_utils
+    ${CUDA_LIBRARIES}
+)

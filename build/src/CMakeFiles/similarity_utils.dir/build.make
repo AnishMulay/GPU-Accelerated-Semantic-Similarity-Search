@@ -111,11 +111,26 @@ src/CMakeFiles/similarity_utils.dir/utils/timer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/similarity_utils.dir/utils/timer.cpp.s"
 	cd /home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/src/utils/timer.cpp -o CMakeFiles/similarity_utils.dir/utils/timer.cpp.s
 
+src/CMakeFiles/similarity_utils.dir/utils/vector_data.cpp.o: src/CMakeFiles/similarity_utils.dir/flags.make
+src/CMakeFiles/similarity_utils.dir/utils/vector_data.cpp.o: /home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/src/utils/vector_data.cpp
+src/CMakeFiles/similarity_utils.dir/utils/vector_data.cpp.o: src/CMakeFiles/similarity_utils.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object src/CMakeFiles/similarity_utils.dir/utils/vector_data.cpp.o"
+	cd /home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/similarity_utils.dir/utils/vector_data.cpp.o -MF CMakeFiles/similarity_utils.dir/utils/vector_data.cpp.o.d -o CMakeFiles/similarity_utils.dir/utils/vector_data.cpp.o -c /home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/src/utils/vector_data.cpp
+
+src/CMakeFiles/similarity_utils.dir/utils/vector_data.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/similarity_utils.dir/utils/vector_data.cpp.i"
+	cd /home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/src/utils/vector_data.cpp > CMakeFiles/similarity_utils.dir/utils/vector_data.cpp.i
+
+src/CMakeFiles/similarity_utils.dir/utils/vector_data.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/similarity_utils.dir/utils/vector_data.cpp.s"
+	cd /home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/src/utils/vector_data.cpp -o CMakeFiles/similarity_utils.dir/utils/vector_data.cpp.s
+
 # Object files for target similarity_utils
 similarity_utils_OBJECTS = \
 "CMakeFiles/similarity_utils.dir/utils/data_loader.cpp.o" \
 "CMakeFiles/similarity_utils.dir/utils/metrics.cpp.o" \
-"CMakeFiles/similarity_utils.dir/utils/timer.cpp.o"
+"CMakeFiles/similarity_utils.dir/utils/timer.cpp.o" \
+"CMakeFiles/similarity_utils.dir/utils/vector_data.cpp.o"
 
 # External object files for target similarity_utils
 similarity_utils_EXTERNAL_OBJECTS =
@@ -123,9 +138,10 @@ similarity_utils_EXTERNAL_OBJECTS =
 src/libsimilarity_utils.a: src/CMakeFiles/similarity_utils.dir/utils/data_loader.cpp.o
 src/libsimilarity_utils.a: src/CMakeFiles/similarity_utils.dir/utils/metrics.cpp.o
 src/libsimilarity_utils.a: src/CMakeFiles/similarity_utils.dir/utils/timer.cpp.o
+src/libsimilarity_utils.a: src/CMakeFiles/similarity_utils.dir/utils/vector_data.cpp.o
 src/libsimilarity_utils.a: src/CMakeFiles/similarity_utils.dir/build.make
 src/libsimilarity_utils.a: src/CMakeFiles/similarity_utils.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX static library libsimilarity_utils.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX static library libsimilarity_utils.a"
 	cd /home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/build/src && $(CMAKE_COMMAND) -P CMakeFiles/similarity_utils.dir/cmake_clean_target.cmake
 	cd /home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/build/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/similarity_utils.dir/link.txt --verbose=$(VERBOSE)
 

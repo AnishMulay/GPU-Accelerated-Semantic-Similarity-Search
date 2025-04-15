@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/usr/include -I/home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/include
+CXX_INCLUDES = -I/home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/include
 
 CXX_FLAGS = -std=gnu++17
 

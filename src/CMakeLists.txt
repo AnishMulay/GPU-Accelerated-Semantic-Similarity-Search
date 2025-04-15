@@ -3,6 +3,7 @@ add_library(similarity_utils
     utils/data_loader.cpp
     utils/metrics.cpp
     utils/timer.cpp
+    utils/vector_data.cpp
 )
 
 add_library(cpu_implementations

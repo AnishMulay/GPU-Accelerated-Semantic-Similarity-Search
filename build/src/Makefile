@@ -326,6 +326,30 @@ utils/timer.cpp.s:
 	cd /home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/similarity_utils.dir/build.make src/CMakeFiles/similarity_utils.dir/utils/timer.cpp.s
 .PHONY : utils/timer.cpp.s
 
+utils/vector_data.o: utils/vector_data.cpp.o
+.PHONY : utils/vector_data.o
+
+# target to build an object file
+utils/vector_data.cpp.o:
+	cd /home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/similarity_utils.dir/build.make src/CMakeFiles/similarity_utils.dir/utils/vector_data.cpp.o
+.PHONY : utils/vector_data.cpp.o
+
+utils/vector_data.i: utils/vector_data.cpp.i
+.PHONY : utils/vector_data.i
+
+# target to preprocess a source file
+utils/vector_data.cpp.i:
+	cd /home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/similarity_utils.dir/build.make src/CMakeFiles/similarity_utils.dir/utils/vector_data.cpp.i
+.PHONY : utils/vector_data.cpp.i
+
+utils/vector_data.s: utils/vector_data.cpp.s
+.PHONY : utils/vector_data.s
+
+# target to generate assembly for a file
+utils/vector_data.cpp.s:
+	cd /home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/similarity_utils.dir/build.make src/CMakeFiles/similarity_utils.dir/utils/vector_data.cpp.s
+.PHONY : utils/vector_data.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -358,6 +382,9 @@ help:
 	@echo "... utils/timer.o"
 	@echo "... utils/timer.i"
 	@echo "... utils/timer.s"
+	@echo "... utils/vector_data.o"
+	@echo "... utils/vector_data.i"
+	@echo "... utils/vector_data.s"
 .PHONY : help
 
 

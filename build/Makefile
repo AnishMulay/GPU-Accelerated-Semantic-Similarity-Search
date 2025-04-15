@@ -181,6 +181,19 @@ test_similarity/fast:
 	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_similarity.dir/build.make tests/CMakeFiles/test_similarity.dir/build
 .PHONY : test_similarity/fast
 
+#=============================================================================
+# Target rules for targets named test_vector_data
+
+# Build rule for target.
+test_vector_data: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_vector_data
+.PHONY : test_vector_data
+
+# fast build rule for target.
+test_vector_data/fast:
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_vector_data.dir/build.make tests/CMakeFiles/test_vector_data.dir/build
+.PHONY : test_vector_data/fast
+
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -218,6 +231,7 @@ help:
 	@echo "... semantic_search"
 	@echo "... similarity_utils"
 	@echo "... test_similarity"
+	@echo "... test_vector_data"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

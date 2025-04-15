@@ -5,15 +5,15 @@ project(SemanticSearch LANGUAGES CXX CUDA)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-# Find CUDA
-find_package(CUDA REQUIRED)
-include_directories(${CUDA_INCLUDE_DIRS})
+# Modern way to find CUDA
+find_package(CUDAToolkit REQUIRED)
 
 # Find required packages
 find_package(OpenMP REQUIRED)
 
 # Add include directories
 include_directories(${PROJECT_SOURCE_DIR}/include)
+include_directories(SYSTEM /usr/include /usr/local/include)
 
 # Add subdirectories
 add_subdirectory(src)
@@ -25,6 +25,6 @@ target_link_libraries(semantic_search PRIVATE
     similarity_utils
     cpu_implementations
     gpu_implementations
-    ${CUDA_LIBRARIES}
+    CUDA::cudart
     OpenMP::OpenMP_CXX
 )

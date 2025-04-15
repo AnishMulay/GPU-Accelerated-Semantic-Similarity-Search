@@ -95,19 +95,9 @@ semantic_search: CMakeFiles/semantic_search.dir/build.make
 semantic_search: src/libsimilarity_utils.a
 semantic_search: src/libcpu_implementations.a
 semantic_search: src/libgpu_implementations.a
-semantic_search: /usr/lib/x86_64-linux-gnu/libcudart_static.a
-semantic_search: /usr/lib/x86_64-linux-gnu/librt.a
-semantic_search: /usr/lib/gcc/x86_64-linux-gnu/13/libstdc++.so
-semantic_search: /usr/lib/x86_64-linux-gnu/libm.so
+semantic_search: /usr/lib/x86_64-linux-gnu/libcudart.so
 semantic_search: /usr/lib/gcc/x86_64-linux-gnu/13/libgomp.so
-semantic_search: /usr/lib/gcc/x86_64-linux-gnu/13/libgcc_s.so
-semantic_search: /usr/lib/gcc/x86_64-linux-gnu/13/libgcc.a
 semantic_search: /usr/lib/x86_64-linux-gnu/libpthread.a
-semantic_search: /usr/lib/x86_64-linux-gnu/libc.so
-semantic_search: /usr/lib/gcc/x86_64-linux-gnu/13/libgcc_s.so
-semantic_search: /usr/lib/gcc/x86_64-linux-gnu/13/libgcc.a
-semantic_search: /usr/lib/x86_64-linux-gnu/libpthread.a
-semantic_search: /usr/lib/x86_64-linux-gnu/libc.so
 semantic_search: CMakeFiles/semantic_search.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable semantic_search"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/semantic_search.dir/link.txt --verbose=$(VERBOSE)

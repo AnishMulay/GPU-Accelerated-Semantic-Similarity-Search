@@ -130,6 +130,20 @@ test_similarity/fast:
 	cd /home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_similarity.dir/build.make tests/CMakeFiles/test_similarity.dir/build
 .PHONY : test_similarity/fast
 
+# Convenience name for target.
+tests/CMakeFiles/test_vector_data.dir/rule:
+	cd /home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/test_vector_data.dir/rule
+.PHONY : tests/CMakeFiles/test_vector_data.dir/rule
+
+# Convenience name for target.
+test_vector_data: tests/CMakeFiles/test_vector_data.dir/rule
+.PHONY : test_vector_data
+
+# fast build rule for target.
+test_vector_data/fast:
+	cd /home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_vector_data.dir/build.make tests/CMakeFiles/test_vector_data.dir/build
+.PHONY : test_vector_data/fast
+
 test_similarity.o: test_similarity.cpp.o
 .PHONY : test_similarity.o
 
@@ -154,6 +168,30 @@ test_similarity.cpp.s:
 	cd /home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_similarity.dir/build.make tests/CMakeFiles/test_similarity.dir/test_similarity.cpp.s
 .PHONY : test_similarity.cpp.s
 
+test_vector_data.o: test_vector_data.cpp.o
+.PHONY : test_vector_data.o
+
+# target to build an object file
+test_vector_data.cpp.o:
+	cd /home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_vector_data.dir/build.make tests/CMakeFiles/test_vector_data.dir/test_vector_data.cpp.o
+.PHONY : test_vector_data.cpp.o
+
+test_vector_data.i: test_vector_data.cpp.i
+.PHONY : test_vector_data.i
+
+# target to preprocess a source file
+test_vector_data.cpp.i:
+	cd /home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_vector_data.dir/build.make tests/CMakeFiles/test_vector_data.dir/test_vector_data.cpp.i
+.PHONY : test_vector_data.cpp.i
+
+test_vector_data.s: test_vector_data.cpp.s
+.PHONY : test_vector_data.s
+
+# target to generate assembly for a file
+test_vector_data.cpp.s:
+	cd /home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_vector_data.dir/build.make tests/CMakeFiles/test_vector_data.dir/test_vector_data.cpp.s
+.PHONY : test_vector_data.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -163,9 +201,13 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... test_similarity"
+	@echo "... test_vector_data"
 	@echo "... test_similarity.o"
 	@echo "... test_similarity.i"
 	@echo "... test_similarity.s"
+	@echo "... test_vector_data.o"
+	@echo "... test_vector_data.i"
+	@echo "... test_vector_data.s"
 .PHONY : help
 
 
