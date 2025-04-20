@@ -233,6 +233,19 @@ test_cuda/fast:
 	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_cuda.dir/build.make tests/CMakeFiles/test_cuda.dir/build
 .PHONY : test_cuda/fast
 
+#=============================================================================
+# Target rules for targets named test_rapids
+
+# Build rule for target.
+test_rapids: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_rapids
+.PHONY : test_rapids
+
+# fast build rule for target.
+test_rapids/fast:
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_rapids.dir/build.make tests/CMakeFiles/test_rapids.dir/build
+.PHONY : test_rapids/fast
+
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -272,6 +285,7 @@ help:
 	@echo "... test_brute_force_comparison"
 	@echo "... test_cuda"
 	@echo "... test_faiss"
+	@echo "... test_rapids"
 	@echo "... test_similarity"
 	@echo "... test_vector_data"
 	@echo "... src/main.o"

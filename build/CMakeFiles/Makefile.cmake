@@ -162,4 +162,5 @@ set(CMAKE_DEPEND_INFO_FILES
   "tests/CMakeFiles/test_brute_force_comparison.dir/DependInfo.cmake"
   "tests/CMakeFiles/test_faiss.dir/DependInfo.cmake"
   "tests/CMakeFiles/test_cuda.dir/DependInfo.cmake"
+  "tests/CMakeFiles/test_rapids.dir/DependInfo.cmake"
   )

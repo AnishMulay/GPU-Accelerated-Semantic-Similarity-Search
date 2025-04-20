@@ -459,6 +459,9 @@ OpenMP_gomp_LIBRARY:FILEPATH=/usr/lib/gcc/x86_64-linux-gnu/13/libgomp.so
 //Path to the pthread library for OpenMP
 OpenMP_pthread_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libpthread.a
 
+//The directory containing a CMake configuration file for RapidsCuML.
+RapidsCuML_DIR:PATH=RapidsCuML_DIR-NOTFOUND
+
 //Value Computed by CMake
 SemanticSearch_BINARY_DIR:STATIC=/home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/build
 

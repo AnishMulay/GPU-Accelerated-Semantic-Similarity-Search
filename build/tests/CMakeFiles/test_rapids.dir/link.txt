@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/test_rapids.dir/test_rapids.cpp.o CMakeFiles/test_rapids.dir/cmake_device_link.o -o test_rapids   -L/usr/local/lib  -L/usr/lib/x86_64-linux-gnu/stubs  -L/usr/lib/gcc/x86_64-linux-gnu/12  -Wl,-rpath,/usr/local/lib ../src/libsimilarity_utils.a ../src/libgpu_implementations.a -lcudadevrt -lcudart_static -lrt -lpthread -ldl 

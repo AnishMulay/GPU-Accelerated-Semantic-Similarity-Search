@@ -186,6 +186,20 @@ test_cuda/fast:
 	cd /home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_cuda.dir/build.make tests/CMakeFiles/test_cuda.dir/build
 .PHONY : test_cuda/fast
 
+# Convenience name for target.
+tests/CMakeFiles/test_rapids.dir/rule:
+	cd /home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/test_rapids.dir/rule
+.PHONY : tests/CMakeFiles/test_rapids.dir/rule
+
+# Convenience name for target.
+test_rapids: tests/CMakeFiles/test_rapids.dir/rule
+.PHONY : test_rapids
+
+# fast build rule for target.
+test_rapids/fast:
+	cd /home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_rapids.dir/build.make tests/CMakeFiles/test_rapids.dir/build
+.PHONY : test_rapids/fast
+
 test_brute_force_comparison.o: test_brute_force_comparison.cpp.o
 .PHONY : test_brute_force_comparison.o
 
@@ -258,6 +272,30 @@ test_faiss.cpp.s:
 	cd /home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_faiss.dir/build.make tests/CMakeFiles/test_faiss.dir/test_faiss.cpp.s
 .PHONY : test_faiss.cpp.s
 
+test_rapids.o: test_rapids.cpp.o
+.PHONY : test_rapids.o
+
+# target to build an object file
+test_rapids.cpp.o:
+	cd /home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_rapids.dir/build.make tests/CMakeFiles/test_rapids.dir/test_rapids.cpp.o
+.PHONY : test_rapids.cpp.o
+
+test_rapids.i: test_rapids.cpp.i
+.PHONY : test_rapids.i
+
+# target to preprocess a source file
+test_rapids.cpp.i:
+	cd /home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_rapids.dir/build.make tests/CMakeFiles/test_rapids.dir/test_rapids.cpp.i
+.PHONY : test_rapids.cpp.i
+
+test_rapids.s: test_rapids.cpp.s
+.PHONY : test_rapids.s
+
+# target to generate assembly for a file
+test_rapids.cpp.s:
+	cd /home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_rapids.dir/build.make tests/CMakeFiles/test_rapids.dir/test_rapids.cpp.s
+.PHONY : test_rapids.cpp.s
+
 test_similarity.o: test_similarity.cpp.o
 .PHONY : test_similarity.o
 
@@ -317,6 +355,7 @@ help:
 	@echo "... test_brute_force_comparison"
 	@echo "... test_cuda"
 	@echo "... test_faiss"
+	@echo "... test_rapids"
 	@echo "... test_similarity"
 	@echo "... test_vector_data"
 	@echo "... test_brute_force_comparison.o"
@@ -328,6 +367,9 @@ help:
 	@echo "... test_faiss.o"
 	@echo "... test_faiss.i"
 	@echo "... test_faiss.s"
+	@echo "... test_rapids.o"
+	@echo "... test_rapids.i"
+	@echo "... test_rapids.s"
 	@echo "... test_similarity.o"
 	@echo "... test_similarity.i"
 	@echo "... test_similarity.s"

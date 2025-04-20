@@ -22,6 +22,17 @@ message(STATUS "LAPACK_LIBRARIES: ${LAPACK_LIBRARIES}")
 
 link_directories(/usr/local/lib)
 
+# Find RAPIDS cuML
+set(CMAKE_PREFIX_PATH $ENV{CONDA_PREFIX} ${CMAKE_PREFIX_PATH})
+find_package(RapidsCuML QUIET)
+
+# If RAPIDS cuML is not found, provide a fallback implementation
+if(NOT RapidsCuML_FOUND)
+    message(STATUS "RAPIDS cuML not found, using placeholder implementation")
+    # Your placeholder implementation code will be used
+endif()
+
+
 # Modern way to find CUDA
 find_package(CUDAToolkit REQUIRED)
 

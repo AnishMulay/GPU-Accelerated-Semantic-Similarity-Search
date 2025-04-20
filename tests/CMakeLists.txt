@@ -38,3 +38,12 @@ target_link_libraries(test_cuda PRIVATE
     gpu_implementations
     ${CUDA_LIBRARIES}
 )
+
+# tests/CMakeLists.txt
+add_executable(test_rapids test_rapids.cpp)
+target_link_libraries(test_rapids PRIVATE 
+    similarity_utils
+    gpu_implementations
+    ${CUDA_LIBRARIES}
+    ${RapidsCuML_LIBRARIES}
+)
