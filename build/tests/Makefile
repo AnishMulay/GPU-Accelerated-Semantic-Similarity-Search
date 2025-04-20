@@ -158,6 +158,20 @@ test_brute_force_comparison/fast:
 	cd /home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_brute_force_comparison.dir/build.make tests/CMakeFiles/test_brute_force_comparison.dir/build
 .PHONY : test_brute_force_comparison/fast
 
+# Convenience name for target.
+tests/CMakeFiles/test_faiss.dir/rule:
+	cd /home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/test_faiss.dir/rule
+.PHONY : tests/CMakeFiles/test_faiss.dir/rule
+
+# Convenience name for target.
+test_faiss: tests/CMakeFiles/test_faiss.dir/rule
+.PHONY : test_faiss
+
+# fast build rule for target.
+test_faiss/fast:
+	cd /home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_faiss.dir/build.make tests/CMakeFiles/test_faiss.dir/build
+.PHONY : test_faiss/fast
+
 test_brute_force_comparison.o: test_brute_force_comparison.cpp.o
 .PHONY : test_brute_force_comparison.o
 
@@ -181,6 +195,30 @@ test_brute_force_comparison.s: test_brute_force_comparison.cpp.s
 test_brute_force_comparison.cpp.s:
 	cd /home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_brute_force_comparison.dir/build.make tests/CMakeFiles/test_brute_force_comparison.dir/test_brute_force_comparison.cpp.s
 .PHONY : test_brute_force_comparison.cpp.s
+
+test_faiss.o: test_faiss.cpp.o
+.PHONY : test_faiss.o
+
+# target to build an object file
+test_faiss.cpp.o:
+	cd /home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_faiss.dir/build.make tests/CMakeFiles/test_faiss.dir/test_faiss.cpp.o
+.PHONY : test_faiss.cpp.o
+
+test_faiss.i: test_faiss.cpp.i
+.PHONY : test_faiss.i
+
+# target to preprocess a source file
+test_faiss.cpp.i:
+	cd /home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_faiss.dir/build.make tests/CMakeFiles/test_faiss.dir/test_faiss.cpp.i
+.PHONY : test_faiss.cpp.i
+
+test_faiss.s: test_faiss.cpp.s
+.PHONY : test_faiss.s
+
+# target to generate assembly for a file
+test_faiss.cpp.s:
+	cd /home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_faiss.dir/build.make tests/CMakeFiles/test_faiss.dir/test_faiss.cpp.s
+.PHONY : test_faiss.cpp.s
 
 test_similarity.o: test_similarity.cpp.o
 .PHONY : test_similarity.o
@@ -239,11 +277,15 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... test_brute_force_comparison"
+	@echo "... test_faiss"
 	@echo "... test_similarity"
 	@echo "... test_vector_data"
 	@echo "... test_brute_force_comparison.o"
 	@echo "... test_brute_force_comparison.i"
 	@echo "... test_brute_force_comparison.s"
+	@echo "... test_faiss.o"
+	@echo "... test_faiss.i"
+	@echo "... test_faiss.s"
 	@echo "... test_similarity.o"
 	@echo "... test_similarity.i"
 	@echo "... test_similarity.s"

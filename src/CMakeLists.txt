@@ -17,6 +17,15 @@ add_library(gpu_implementations
     gpu/rapids_wrapper.cpp
 )
 
+# Link CPU implementations with FAISS
+# Link CPU implementations with FAISS and its dependencies
+target_link_libraries(cpu_implementations PRIVATE 
+    OpenMP::OpenMP_CXX
+    faiss
+    ${BLAS_LIBRARIES}
+    ${LAPACK_LIBRARIES}
+)
+
 # Set include directories for libraries
 target_include_directories(similarity_utils PUBLIC ${PROJECT_SOURCE_DIR}/include)
 target_include_directories(cpu_implementations PUBLIC ${PROJECT_SOURCE_DIR}/include)

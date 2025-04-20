@@ -96,6 +96,15 @@ tests/test_brute_force_comparison: src/libsimilarity_utils.a
 tests/test_brute_force_comparison: src/libcpu_implementations.a
 tests/test_brute_force_comparison: /usr/lib/gcc/x86_64-linux-gnu/13/libgomp.so
 tests/test_brute_force_comparison: /usr/lib/x86_64-linux-gnu/libpthread.a
+tests/test_brute_force_comparison: /usr/local/lib/libfaiss_avx2.so
+tests/test_brute_force_comparison: /usr/lib/x86_64-linux-gnu/libmkl_intel_lp64.so
+tests/test_brute_force_comparison: /usr/lib/x86_64-linux-gnu/libmkl_intel_thread.so
+tests/test_brute_force_comparison: /usr/lib/x86_64-linux-gnu/libmkl_core.so
+tests/test_brute_force_comparison: /usr/lib/x86_64-linux-gnu/libiomp5.so
+tests/test_brute_force_comparison: /usr/lib/x86_64-linux-gnu/libmkl_intel_lp64.so
+tests/test_brute_force_comparison: /usr/lib/x86_64-linux-gnu/libmkl_intel_thread.so
+tests/test_brute_force_comparison: /usr/lib/x86_64-linux-gnu/libmkl_core.so
+tests/test_brute_force_comparison: /usr/lib/x86_64-linux-gnu/libiomp5.so
 tests/test_brute_force_comparison: tests/CMakeFiles/test_brute_force_comparison.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable test_brute_force_comparison"
 	cd /home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/build/tests && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/test_brute_force_comparison.dir/link.txt --verbose=$(VERBOSE)

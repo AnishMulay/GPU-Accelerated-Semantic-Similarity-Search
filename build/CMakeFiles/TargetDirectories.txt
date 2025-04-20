@@ -9,5 +9,6 @@
 /home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/build/tests/CMakeFiles/test_similarity.dir
 /home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/build/tests/CMakeFiles/test_vector_data.dir
 /home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/build/tests/CMakeFiles/test_brute_force_comparison.dir
+/home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/build/tests/CMakeFiles/test_faiss.dir
 /home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/build/tests/CMakeFiles/edit_cache.dir
 /home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/build/tests/CMakeFiles/rebuild_cache.dir

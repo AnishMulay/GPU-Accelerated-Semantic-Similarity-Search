@@ -207,6 +207,19 @@ test_brute_force_comparison/fast:
 	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_brute_force_comparison.dir/build.make tests/CMakeFiles/test_brute_force_comparison.dir/build
 .PHONY : test_brute_force_comparison/fast
 
+#=============================================================================
+# Target rules for targets named test_faiss
+
+# Build rule for target.
+test_faiss: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_faiss
+.PHONY : test_faiss
+
+# fast build rule for target.
+test_faiss/fast:
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_faiss.dir/build.make tests/CMakeFiles/test_faiss.dir/build
+.PHONY : test_faiss/fast
+
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -244,6 +257,7 @@ help:
 	@echo "... semantic_search"
 	@echo "... similarity_utils"
 	@echo "... test_brute_force_comparison"
+	@echo "... test_faiss"
 	@echo "... test_similarity"
 	@echo "... test_vector_data"
 	@echo "... src/main.o"

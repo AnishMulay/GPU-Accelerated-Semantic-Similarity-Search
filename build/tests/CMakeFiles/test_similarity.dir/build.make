@@ -97,6 +97,15 @@ tests/test_similarity: src/libcpu_implementations.a
 tests/test_similarity: src/libgpu_implementations.a
 tests/test_similarity: /usr/lib/gcc/x86_64-linux-gnu/13/libgomp.so
 tests/test_similarity: /usr/lib/x86_64-linux-gnu/libpthread.a
+tests/test_similarity: /usr/local/lib/libfaiss_avx2.so
+tests/test_similarity: /usr/lib/x86_64-linux-gnu/libmkl_intel_lp64.so
+tests/test_similarity: /usr/lib/x86_64-linux-gnu/libmkl_intel_thread.so
+tests/test_similarity: /usr/lib/x86_64-linux-gnu/libmkl_core.so
+tests/test_similarity: /usr/lib/x86_64-linux-gnu/libiomp5.so
+tests/test_similarity: /usr/lib/x86_64-linux-gnu/libmkl_intel_lp64.so
+tests/test_similarity: /usr/lib/x86_64-linux-gnu/libmkl_intel_thread.so
+tests/test_similarity: /usr/lib/x86_64-linux-gnu/libmkl_core.so
+tests/test_similarity: /usr/lib/x86_64-linux-gnu/libiomp5.so
 tests/test_similarity: tests/CMakeFiles/test_similarity.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable test_similarity"
 	cd /home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/build/tests && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/test_similarity.dir/link.txt --verbose=$(VERBOSE)

@@ -14,6 +14,24 @@
 # EXTERNAL cache entries
 ########################
 
+//Path to a library.
+BLAS_guide_LIBRARY:FILEPATH=BLAS_guide_LIBRARY-NOTFOUND
+
+//Path to a library.
+BLAS_iomp5_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libiomp5.so
+
+//Path to a library.
+BLAS_mkl_core_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libmkl_core.so
+
+//Path to a library.
+BLAS_mkl_intel_LIBRARY:FILEPATH=BLAS_mkl_intel_LIBRARY-NOTFOUND
+
+//Path to a library.
+BLAS_mkl_intel_lp64_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libmkl_intel_lp64.so
+
+//Path to a library.
+BLAS_mkl_intel_thread_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libmkl_intel_thread.so
+
 //Path to a program.
 CMAKE_ADDR2LINE:FILEPATH=/usr/bin/addr2line
 
@@ -426,6 +444,9 @@ CUDA_nvrtc_static_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libnvrtc_static.a
 //Path to a library.
 CUDA_pcsamplingutil_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libpcsamplingutil.so
 
+//The directory containing a CMake configuration file for MKL.
+MKL_DIR:PATH=MKL_DIR-NOTFOUND
+
 //CXX compiler flags for OpenMP parallelization
 OpenMP_CXX_FLAGS:STRING=-fopenmp
 
@@ -447,11 +468,30 @@ SemanticSearch_IS_TOP_LEVEL:STATIC=ON
 //Value Computed by CMake
 SemanticSearch_SOURCE_DIR:STATIC=/home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search
 
+//The directory containing a CMake configuration file for faiss.
+faiss_DIR:PATH=/usr/local/share/faiss
+
 
 ########################
 # INTERNAL cache entries
 ########################
 
+//Have function sgemm_
+BLAS_WORKS:INTERNAL=
+//ADVANCED property for variable: BLAS_guide_LIBRARY
+BLAS_guide_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: BLAS_iomp5_LIBRARY
+BLAS_iomp5_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: BLAS_mkl_core_LIBRARY
+BLAS_mkl_core_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: BLAS_mkl_intel_LIBRARY
+BLAS_mkl_intel_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: BLAS_mkl_intel_lp64_LIBRARY
+BLAS_mkl_intel_lp64_LIBRARY-ADVANCED:INTERNAL=1
+//Have function sgemm_
+BLAS_mkl_intel_lp64_deps_mkl_intel_thread_deps_mkl_core_deps_iomp5_deps_WORKS:INTERNAL=1
+//ADVANCED property for variable: BLAS_mkl_intel_thread_LIBRARY
+BLAS_mkl_intel_thread_LIBRARY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_ADDR2LINE
 CMAKE_ADDR2LINE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_AR
@@ -741,14 +781,20 @@ CUDA_nvrtc_builtins_static_LIBRARY-ADVANCED:INTERNAL=1
 CUDA_nvrtc_static_LIBRARY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CUDA_pcsamplingutil_LIBRARY
 CUDA_pcsamplingutil_LIBRARY-ADVANCED:INTERNAL=1
+//Details about finding BLAS
+FIND_PACKAGE_MESSAGE_DETAILS_BLAS:INTERNAL=[/usr/lib/x86_64-linux-gnu/libmkl_intel_lp64.so;/usr/lib/x86_64-linux-gnu/libmkl_intel_thread.so;/usr/lib/x86_64-linux-gnu/libmkl_core.so;/usr/lib/x86_64-linux-gnu/libiomp5.so;-lm;-ldl][v()]
 //Details about finding CUDAToolkit
 FIND_PACKAGE_MESSAGE_DETAILS_CUDAToolkit:INTERNAL=[/usr/include][/usr/lib/x86_64-linux-gnu/libcudart.so][/usr/bin][v12.0.140()]
+//Details about finding LAPACK
+FIND_PACKAGE_MESSAGE_DETAILS_LAPACK:INTERNAL=[/usr/lib/x86_64-linux-gnu/libmkl_intel_lp64.so;/usr/lib/x86_64-linux-gnu/libmkl_intel_thread.so;/usr/lib/x86_64-linux-gnu/libmkl_core.so;/usr/lib/x86_64-linux-gnu/libiomp5.so;-lm;-ldl;-lm;-ldl][v()]
 //Details about finding OpenMP
 FIND_PACKAGE_MESSAGE_DETAILS_OpenMP:INTERNAL=[TRUE][c ][v4.5()]
 //Details about finding OpenMP_CXX
 FIND_PACKAGE_MESSAGE_DETAILS_OpenMP_CXX:INTERNAL=[-fopenmp][/usr/lib/gcc/x86_64-linux-gnu/13/libgomp.so][/usr/lib/x86_64-linux-gnu/libpthread.a][v4.5()]
 //Details about finding Threads
 FIND_PACKAGE_MESSAGE_DETAILS_Threads:INTERNAL=[TRUE][v()]
+//Have function cheev_
+LAPACK_WORKS:INTERNAL=1
 //Result of TRY_COMPILE
 OpenMP_COMPILE_RESULT_CXX_fopenmp:INTERNAL=TRUE
 //ADVANCED property for variable: OpenMP_CXX_FLAGS

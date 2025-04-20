@@ -5,6 +5,23 @@ project(SemanticSearch LANGUAGES CXX CUDA)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
+# Find FAISS
+find_package(faiss REQUIRED)
+
+# Find BLAS and LAPACK (required by FAISS)
+find_package(BLAS REQUIRED)
+find_package(LAPACK REQUIRED)
+
+# Try to find MKL (preferred for FAISS)
+find_package(MKL QUIET)
+
+# Output found libraries for debugging
+message(STATUS "FAISS_LIBRARIES: ${FAISS_LIBRARIES}")
+message(STATUS "BLAS_LIBRARIES: ${BLAS_LIBRARIES}")
+message(STATUS "LAPACK_LIBRARIES: ${LAPACK_LIBRARIES}")
+
+link_directories(/usr/local/lib)
+
 # Modern way to find CUDA
 find_package(CUDAToolkit REQUIRED)
 

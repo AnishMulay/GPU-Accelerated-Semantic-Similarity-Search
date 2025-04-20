@@ -19,3 +19,13 @@ target_link_libraries(test_brute_force_comparison PRIVATE
     ${CUDA_LIBRARIES}
     OpenMP::OpenMP_CXX
 )
+
+add_executable(test_faiss test_faiss.cpp)
+target_link_libraries(test_faiss PRIVATE 
+    similarity_utils
+    cpu_implementations
+    -lfaiss  # Direct link by name
+    -lopenblas
+    -llapack
+    ${CUDA_LIBRARIES}
+)
