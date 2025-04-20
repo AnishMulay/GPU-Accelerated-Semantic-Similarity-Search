@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/similarity_utils.dir/utils/benchmark.cpp.o"
+  "CMakeFiles/similarity_utils.dir/utils/benchmark.cpp.o.d"
   "CMakeFiles/similarity_utils.dir/utils/data_loader.cpp.o"
   "CMakeFiles/similarity_utils.dir/utils/data_loader.cpp.o.d"
   "CMakeFiles/similarity_utils.dir/utils/metrics.cpp.o"

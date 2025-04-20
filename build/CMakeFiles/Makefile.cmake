@@ -157,6 +157,7 @@ set(CMAKE_DEPEND_INFO_FILES
   "src/CMakeFiles/similarity_utils.dir/DependInfo.cmake"
   "src/CMakeFiles/cpu_implementations.dir/DependInfo.cmake"
   "src/CMakeFiles/gpu_implementations.dir/DependInfo.cmake"
+  "src/CMakeFiles/benchmark_app.dir/DependInfo.cmake"
   "tests/CMakeFiles/test_similarity.dir/DependInfo.cmake"
   "tests/CMakeFiles/test_vector_data.dir/DependInfo.cmake"
   "tests/CMakeFiles/test_brute_force_comparison.dir/DependInfo.cmake"

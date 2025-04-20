@@ -169,6 +169,19 @@ gpu_implementations/fast:
 .PHONY : gpu_implementations/fast
 
 #=============================================================================
+# Target rules for targets named benchmark_app
+
+# Build rule for target.
+benchmark_app: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 benchmark_app
+.PHONY : benchmark_app
+
+# fast build rule for target.
+benchmark_app/fast:
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/benchmark_app.dir/build.make src/CMakeFiles/benchmark_app.dir/build
+.PHONY : benchmark_app/fast
+
+#=============================================================================
 # Target rules for targets named test_similarity
 
 # Build rule for target.
@@ -278,6 +291,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... benchmark_app"
 	@echo "... cpu_implementations"
 	@echo "... gpu_implementations"
 	@echo "... semantic_search"

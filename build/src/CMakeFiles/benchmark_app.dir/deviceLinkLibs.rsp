@@ -1,0 +1,1 @@
+  -L/usr/local/lib  -L"/usr/lib/x86_64-linux-gnu/stubs"  -L"/usr/lib/gcc/x86_64-linux-gnu/12"  libsimilarity_utils.a libcpu_implementations.a libgpu_implementations.a  "/usr/lib/x86_64-linux-gnu/libpthread.a" -lm -ldl -lcudadevrt -lcudart_static -lrt -lpthread 

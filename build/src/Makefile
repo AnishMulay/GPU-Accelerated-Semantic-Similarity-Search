@@ -158,6 +158,44 @@ gpu_implementations/fast:
 	cd /home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/gpu_implementations.dir/build.make src/CMakeFiles/gpu_implementations.dir/build
 .PHONY : gpu_implementations/fast
 
+# Convenience name for target.
+src/CMakeFiles/benchmark_app.dir/rule:
+	cd /home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/benchmark_app.dir/rule
+.PHONY : src/CMakeFiles/benchmark_app.dir/rule
+
+# Convenience name for target.
+benchmark_app: src/CMakeFiles/benchmark_app.dir/rule
+.PHONY : benchmark_app
+
+# fast build rule for target.
+benchmark_app/fast:
+	cd /home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/benchmark_app.dir/build.make src/CMakeFiles/benchmark_app.dir/build
+.PHONY : benchmark_app/fast
+
+benchmark_app.o: benchmark_app.cpp.o
+.PHONY : benchmark_app.o
+
+# target to build an object file
+benchmark_app.cpp.o:
+	cd /home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/benchmark_app.dir/build.make src/CMakeFiles/benchmark_app.dir/benchmark_app.cpp.o
+.PHONY : benchmark_app.cpp.o
+
+benchmark_app.i: benchmark_app.cpp.i
+.PHONY : benchmark_app.i
+
+# target to preprocess a source file
+benchmark_app.cpp.i:
+	cd /home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/benchmark_app.dir/build.make src/CMakeFiles/benchmark_app.dir/benchmark_app.cpp.i
+.PHONY : benchmark_app.cpp.i
+
+benchmark_app.s: benchmark_app.cpp.s
+.PHONY : benchmark_app.s
+
+# target to generate assembly for a file
+benchmark_app.cpp.s:
+	cd /home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/benchmark_app.dir/build.make src/CMakeFiles/benchmark_app.dir/benchmark_app.cpp.s
+.PHONY : benchmark_app.cpp.s
+
 cpu/brute_force.o: cpu/brute_force.cpp.o
 .PHONY : cpu/brute_force.o
 
@@ -302,6 +340,30 @@ gpu/rapids_wrapper.cpp.s:
 	cd /home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/gpu_implementations.dir/build.make src/CMakeFiles/gpu_implementations.dir/gpu/rapids_wrapper.cpp.s
 .PHONY : gpu/rapids_wrapper.cpp.s
 
+utils/benchmark.o: utils/benchmark.cpp.o
+.PHONY : utils/benchmark.o
+
+# target to build an object file
+utils/benchmark.cpp.o:
+	cd /home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/similarity_utils.dir/build.make src/CMakeFiles/similarity_utils.dir/utils/benchmark.cpp.o
+.PHONY : utils/benchmark.cpp.o
+
+utils/benchmark.i: utils/benchmark.cpp.i
+.PHONY : utils/benchmark.i
+
+# target to preprocess a source file
+utils/benchmark.cpp.i:
+	cd /home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/similarity_utils.dir/build.make src/CMakeFiles/similarity_utils.dir/utils/benchmark.cpp.i
+.PHONY : utils/benchmark.cpp.i
+
+utils/benchmark.s: utils/benchmark.cpp.s
+.PHONY : utils/benchmark.s
+
+# target to generate assembly for a file
+utils/benchmark.cpp.s:
+	cd /home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/similarity_utils.dir/build.make src/CMakeFiles/similarity_utils.dir/utils/benchmark.cpp.s
+.PHONY : utils/benchmark.cpp.s
+
 utils/data_loader.o: utils/data_loader.cpp.o
 .PHONY : utils/data_loader.o
 
@@ -406,9 +468,13 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... benchmark_app"
 	@echo "... cpu_implementations"
 	@echo "... gpu_implementations"
 	@echo "... similarity_utils"
+	@echo "... benchmark_app.o"
+	@echo "... benchmark_app.i"
+	@echo "... benchmark_app.s"
 	@echo "... cpu/brute_force.o"
 	@echo "... cpu/brute_force.i"
 	@echo "... cpu/brute_force.s"
@@ -427,6 +493,9 @@ help:
 	@echo "... gpu/rapids_wrapper.o"
 	@echo "... gpu/rapids_wrapper.i"
 	@echo "... gpu/rapids_wrapper.s"
+	@echo "... utils/benchmark.o"
+	@echo "... utils/benchmark.i"
+	@echo "... utils/benchmark.s"
 	@echo "... utils/data_loader.o"
 	@echo "... utils/data_loader.i"
 	@echo "... utils/data_loader.s"

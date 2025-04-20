@@ -1,9 +1,11 @@
 # Libraries
+# Libraries
 add_library(similarity_utils 
     utils/data_loader.cpp
     utils/metrics.cpp
     utils/timer.cpp
     utils/vector_data.cpp
+    utils/benchmark.cpp  # Add this line
 )
 
 add_library(cpu_implementations
@@ -40,3 +42,15 @@ set_target_properties(gpu_implementations PROPERTIES
 
 # Link with CUDA
 target_link_libraries(gpu_implementations PRIVATE ${CUDA_LIBRARIES})
+
+# Create benchmarking application
+add_executable(benchmark_app benchmark_app.cpp)
+target_link_libraries(benchmark_app PRIVATE 
+    similarity_utils
+    cpu_implementations
+    gpu_implementations
+    ${CUDA_LIBRARIES}
+    ${Faiss_LIBRARIES}
+    ${RapidsCuML_LIBRARIES}
+    OpenMP::OpenMP_CXX
+)

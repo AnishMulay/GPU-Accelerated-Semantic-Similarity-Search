@@ -4,6 +4,7 @@
 /home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/build/src/CMakeFiles/similarity_utils.dir
 /home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/build/src/CMakeFiles/cpu_implementations.dir
 /home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/build/src/CMakeFiles/gpu_implementations.dir
+/home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/build/src/CMakeFiles/benchmark_app.dir
 /home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/build/src/CMakeFiles/edit_cache.dir
 /home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/build/src/CMakeFiles/rebuild_cache.dir
 /home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/build/tests/CMakeFiles/test_similarity.dir

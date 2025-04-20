@@ -1,2 +1,2 @@
-/usr/bin/ar qc libsimilarity_utils.a CMakeFiles/similarity_utils.dir/utils/data_loader.cpp.o CMakeFiles/similarity_utils.dir/utils/metrics.cpp.o CMakeFiles/similarity_utils.dir/utils/timer.cpp.o CMakeFiles/similarity_utils.dir/utils/vector_data.cpp.o
+/usr/bin/ar qc libsimilarity_utils.a CMakeFiles/similarity_utils.dir/utils/data_loader.cpp.o CMakeFiles/similarity_utils.dir/utils/metrics.cpp.o CMakeFiles/similarity_utils.dir/utils/timer.cpp.o CMakeFiles/similarity_utils.dir/utils/vector_data.cpp.o CMakeFiles/similarity_utils.dir/utils/benchmark.cpp.o
 /usr/bin/ranlib libsimilarity_utils.a
