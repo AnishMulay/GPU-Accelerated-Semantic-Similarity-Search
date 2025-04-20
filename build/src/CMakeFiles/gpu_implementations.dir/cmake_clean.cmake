@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/gpu_implementations.dir/gpu/cuda_kernels.cu.o"
   "CMakeFiles/gpu_implementations.dir/gpu/cuda_kernels.cu.o.d"
+  "CMakeFiles/gpu_implementations.dir/gpu/cuda_search.cpp.o"
+  "CMakeFiles/gpu_implementations.dir/gpu/cuda_search.cpp.o.d"
   "CMakeFiles/gpu_implementations.dir/gpu/rapids_wrapper.cpp.o"
   "CMakeFiles/gpu_implementations.dir/gpu/rapids_wrapper.cpp.o.d"
   "libgpu_implementations.a"

@@ -220,6 +220,19 @@ test_faiss/fast:
 	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_faiss.dir/build.make tests/CMakeFiles/test_faiss.dir/build
 .PHONY : test_faiss/fast
 
+#=============================================================================
+# Target rules for targets named test_cuda
+
+# Build rule for target.
+test_cuda: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_cuda
+.PHONY : test_cuda
+
+# fast build rule for target.
+test_cuda/fast:
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_cuda.dir/build.make tests/CMakeFiles/test_cuda.dir/build
+.PHONY : test_cuda/fast
+
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -257,6 +270,7 @@ help:
 	@echo "... semantic_search"
 	@echo "... similarity_utils"
 	@echo "... test_brute_force_comparison"
+	@echo "... test_cuda"
 	@echo "... test_faiss"
 	@echo "... test_similarity"
 	@echo "... test_vector_data"

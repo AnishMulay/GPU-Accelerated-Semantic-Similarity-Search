@@ -254,6 +254,30 @@ gpu/cuda_kernels.cu.s:
 	cd /home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/gpu_implementations.dir/build.make src/CMakeFiles/gpu_implementations.dir/gpu/cuda_kernels.cu.s
 .PHONY : gpu/cuda_kernels.cu.s
 
+gpu/cuda_search.o: gpu/cuda_search.cpp.o
+.PHONY : gpu/cuda_search.o
+
+# target to build an object file
+gpu/cuda_search.cpp.o:
+	cd /home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/gpu_implementations.dir/build.make src/CMakeFiles/gpu_implementations.dir/gpu/cuda_search.cpp.o
+.PHONY : gpu/cuda_search.cpp.o
+
+gpu/cuda_search.i: gpu/cuda_search.cpp.i
+.PHONY : gpu/cuda_search.i
+
+# target to preprocess a source file
+gpu/cuda_search.cpp.i:
+	cd /home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/gpu_implementations.dir/build.make src/CMakeFiles/gpu_implementations.dir/gpu/cuda_search.cpp.i
+.PHONY : gpu/cuda_search.cpp.i
+
+gpu/cuda_search.s: gpu/cuda_search.cpp.s
+.PHONY : gpu/cuda_search.s
+
+# target to generate assembly for a file
+gpu/cuda_search.cpp.s:
+	cd /home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/gpu_implementations.dir/build.make src/CMakeFiles/gpu_implementations.dir/gpu/cuda_search.cpp.s
+.PHONY : gpu/cuda_search.cpp.s
+
 gpu/rapids_wrapper.o: gpu/rapids_wrapper.cpp.o
 .PHONY : gpu/rapids_wrapper.o
 
@@ -397,6 +421,9 @@ help:
 	@echo "... gpu/cuda_kernels.o"
 	@echo "... gpu/cuda_kernels.i"
 	@echo "... gpu/cuda_kernels.s"
+	@echo "... gpu/cuda_search.o"
+	@echo "... gpu/cuda_search.i"
+	@echo "... gpu/cuda_search.s"
 	@echo "... gpu/rapids_wrapper.o"
 	@echo "... gpu/rapids_wrapper.i"
 	@echo "... gpu/rapids_wrapper.s"

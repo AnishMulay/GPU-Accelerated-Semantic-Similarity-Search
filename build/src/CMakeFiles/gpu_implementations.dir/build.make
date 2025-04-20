@@ -74,7 +74,7 @@ src/CMakeFiles/gpu_implementations.dir/gpu/cuda_kernels.cu.o: src/CMakeFiles/gpu
 src/CMakeFiles/gpu_implementations.dir/gpu/cuda_kernels.cu.o: /home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/src/gpu/cuda_kernels.cu
 src/CMakeFiles/gpu_implementations.dir/gpu/cuda_kernels.cu.o: src/CMakeFiles/gpu_implementations.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CUDA object src/CMakeFiles/gpu_implementations.dir/gpu/cuda_kernels.cu.o"
-	cd /home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/build/src && /usr/bin/nvcc -forward-unknown-to-host-compiler $(CUDA_DEFINES) $(CUDA_INCLUDES) $(CUDA_FLAGS) -MD -MT src/CMakeFiles/gpu_implementations.dir/gpu/cuda_kernels.cu.o -MF CMakeFiles/gpu_implementations.dir/gpu/cuda_kernels.cu.o.d -x cu -c /home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/src/gpu/cuda_kernels.cu -o CMakeFiles/gpu_implementations.dir/gpu/cuda_kernels.cu.o
+	cd /home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/build/src && /usr/bin/nvcc -forward-unknown-to-host-compiler $(CUDA_DEFINES) $(CUDA_INCLUDES) $(CUDA_FLAGS) -MD -MT src/CMakeFiles/gpu_implementations.dir/gpu/cuda_kernels.cu.o -MF CMakeFiles/gpu_implementations.dir/gpu/cuda_kernels.cu.o.d -x cu -rdc=true -c /home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/src/gpu/cuda_kernels.cu -o CMakeFiles/gpu_implementations.dir/gpu/cuda_kernels.cu.o
 
 src/CMakeFiles/gpu_implementations.dir/gpu/cuda_kernels.cu.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CUDA source to CMakeFiles/gpu_implementations.dir/gpu/cuda_kernels.cu.i"
@@ -84,10 +84,24 @@ src/CMakeFiles/gpu_implementations.dir/gpu/cuda_kernels.cu.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CUDA source to assembly CMakeFiles/gpu_implementations.dir/gpu/cuda_kernels.cu.s"
 	$(CMAKE_COMMAND) -E cmake_unimplemented_variable CMAKE_CUDA_CREATE_ASSEMBLY_SOURCE
 
+src/CMakeFiles/gpu_implementations.dir/gpu/cuda_search.cpp.o: src/CMakeFiles/gpu_implementations.dir/flags.make
+src/CMakeFiles/gpu_implementations.dir/gpu/cuda_search.cpp.o: /home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/src/gpu/cuda_search.cpp
+src/CMakeFiles/gpu_implementations.dir/gpu/cuda_search.cpp.o: src/CMakeFiles/gpu_implementations.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/CMakeFiles/gpu_implementations.dir/gpu/cuda_search.cpp.o"
+	cd /home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/gpu_implementations.dir/gpu/cuda_search.cpp.o -MF CMakeFiles/gpu_implementations.dir/gpu/cuda_search.cpp.o.d -o CMakeFiles/gpu_implementations.dir/gpu/cuda_search.cpp.o -c /home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/src/gpu/cuda_search.cpp
+
+src/CMakeFiles/gpu_implementations.dir/gpu/cuda_search.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/gpu_implementations.dir/gpu/cuda_search.cpp.i"
+	cd /home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/src/gpu/cuda_search.cpp > CMakeFiles/gpu_implementations.dir/gpu/cuda_search.cpp.i
+
+src/CMakeFiles/gpu_implementations.dir/gpu/cuda_search.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/gpu_implementations.dir/gpu/cuda_search.cpp.s"
+	cd /home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/src/gpu/cuda_search.cpp -o CMakeFiles/gpu_implementations.dir/gpu/cuda_search.cpp.s
+
 src/CMakeFiles/gpu_implementations.dir/gpu/rapids_wrapper.cpp.o: src/CMakeFiles/gpu_implementations.dir/flags.make
 src/CMakeFiles/gpu_implementations.dir/gpu/rapids_wrapper.cpp.o: /home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/src/gpu/rapids_wrapper.cpp
 src/CMakeFiles/gpu_implementations.dir/gpu/rapids_wrapper.cpp.o: src/CMakeFiles/gpu_implementations.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/CMakeFiles/gpu_implementations.dir/gpu/rapids_wrapper.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object src/CMakeFiles/gpu_implementations.dir/gpu/rapids_wrapper.cpp.o"
 	cd /home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/gpu_implementations.dir/gpu/rapids_wrapper.cpp.o -MF CMakeFiles/gpu_implementations.dir/gpu/rapids_wrapper.cpp.o.d -o CMakeFiles/gpu_implementations.dir/gpu/rapids_wrapper.cpp.o -c /home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/src/gpu/rapids_wrapper.cpp
 
 src/CMakeFiles/gpu_implementations.dir/gpu/rapids_wrapper.cpp.i: cmake_force
@@ -101,16 +115,18 @@ src/CMakeFiles/gpu_implementations.dir/gpu/rapids_wrapper.cpp.s: cmake_force
 # Object files for target gpu_implementations
 gpu_implementations_OBJECTS = \
 "CMakeFiles/gpu_implementations.dir/gpu/cuda_kernels.cu.o" \
+"CMakeFiles/gpu_implementations.dir/gpu/cuda_search.cpp.o" \
 "CMakeFiles/gpu_implementations.dir/gpu/rapids_wrapper.cpp.o"
 
 # External object files for target gpu_implementations
 gpu_implementations_EXTERNAL_OBJECTS =
 
 src/libgpu_implementations.a: src/CMakeFiles/gpu_implementations.dir/gpu/cuda_kernels.cu.o
+src/libgpu_implementations.a: src/CMakeFiles/gpu_implementations.dir/gpu/cuda_search.cpp.o
 src/libgpu_implementations.a: src/CMakeFiles/gpu_implementations.dir/gpu/rapids_wrapper.cpp.o
 src/libgpu_implementations.a: src/CMakeFiles/gpu_implementations.dir/build.make
 src/libgpu_implementations.a: src/CMakeFiles/gpu_implementations.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library libgpu_implementations.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX static library libgpu_implementations.a"
 	cd /home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/build/src && $(CMAKE_COMMAND) -P CMakeFiles/gpu_implementations.dir/cmake_clean_target.cmake
 	cd /home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/build/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/gpu_implementations.dir/link.txt --verbose=$(VERBOSE)
 

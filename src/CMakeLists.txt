@@ -14,6 +14,7 @@ add_library(cpu_implementations
 
 add_library(gpu_implementations
     gpu/cuda_kernels.cu
+    gpu/cuda_search.cpp
     gpu/rapids_wrapper.cpp
 )
 
@@ -31,6 +32,11 @@ target_include_directories(similarity_utils PUBLIC ${PROJECT_SOURCE_DIR}/include
 target_include_directories(cpu_implementations PUBLIC ${PROJECT_SOURCE_DIR}/include)
 target_link_libraries(cpu_implementations PRIVATE OpenMP::OpenMP_CXX)
 target_include_directories(gpu_implementations PUBLIC ${PROJECT_SOURCE_DIR}/include ${CUDA_INCLUDE_DIRS})
+target_link_libraries(gpu_implementations PRIVATE ${CUDA_LIBRARIES})
+
+set_target_properties(gpu_implementations PROPERTIES 
+    CUDA_SEPARABLE_COMPILATION ON
+)
 
 # Link with CUDA
 target_link_libraries(gpu_implementations PRIVATE ${CUDA_LIBRARIES})

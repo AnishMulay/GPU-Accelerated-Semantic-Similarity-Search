@@ -29,3 +29,12 @@ target_link_libraries(test_faiss PRIVATE
     -llapack
     ${CUDA_LIBRARIES}
 )
+
+# tests/CMakeLists.txt
+add_executable(test_cuda test_cuda.cpp)
+target_link_libraries(test_cuda PRIVATE 
+    similarity_utils
+    cpu_implementations
+    gpu_implementations
+    ${CUDA_LIBRARIES}
+)

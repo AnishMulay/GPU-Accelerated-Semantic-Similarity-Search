@@ -1,0 +1,1 @@
+/usr/bin/nvcc -forward-unknown-to-host-compiler -Xcompiler=-fPIC -Wno-deprecated-gpu-targets -shared -dlink --options-file CMakeFiles/semantic_search.dir/deviceObjects1.rsp -o CMakeFiles/semantic_search.dir/cmake_device_link.o --options-file CMakeFiles/semantic_search.dir/deviceLinkLibs.rsp
