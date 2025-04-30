@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/tests/test_faiss.cpp" "tests/CMakeFiles/test_faiss.dir/test_faiss.cpp.o" "gcc" "tests/CMakeFiles/test_faiss.dir/test_faiss.cpp.o.d"
+  "" "tests/test_faiss" "gcc" "tests/CMakeFiles/test_faiss.dir/link.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

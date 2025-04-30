@@ -1,0 +1,185 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2
+					],
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						3
+					]
+				},
+				{
+					"build" : "src",
+					"jsonFile" : "directory-src-Debug-b6cf2213fc5053b67c22.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "src",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						4
+					]
+				},
+				{
+					"build" : "tests",
+					"jsonFile" : "directory-tests-Debug-b01f6abb0ab61427ef3b.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "tests",
+					"targetIndexes" : 
+					[
+						5,
+						6,
+						7,
+						8,
+						9,
+						10
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1,
+						2
+					],
+					"name" : "SemanticSearch",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 1,
+					"id" : "benchmark_app::@145eef247bfb46b6828c",
+					"jsonFile" : "target-benchmark_app-Debug-f9ae2cee7db7466d9afe.json",
+					"name" : "benchmark_app",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "cpu_implementations::@145eef247bfb46b6828c",
+					"jsonFile" : "target-cpu_implementations-Debug-a2b1b66a764ef48b4559.json",
+					"name" : "cpu_implementations",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "gpu_implementations::@145eef247bfb46b6828c",
+					"jsonFile" : "target-gpu_implementations-Debug-5fa68dc8956a78c91466.json",
+					"name" : "gpu_implementations",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "semantic_search::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-semantic_search-Debug-394e0de90ba017a67b36.json",
+					"name" : "semantic_search",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "similarity_utils::@145eef247bfb46b6828c",
+					"jsonFile" : "target-similarity_utils-Debug-491fac8452ebfafb19c0.json",
+					"name" : "similarity_utils",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "test_brute_force_comparison::@a44f0ac069e85531cdee",
+					"jsonFile" : "target-test_brute_force_comparison-Debug-296cb423953826354782.json",
+					"name" : "test_brute_force_comparison",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "test_cuda::@a44f0ac069e85531cdee",
+					"jsonFile" : "target-test_cuda-Debug-dd2a3059dd1e52a7060d.json",
+					"name" : "test_cuda",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "test_faiss::@a44f0ac069e85531cdee",
+					"jsonFile" : "target-test_faiss-Debug-c14a98ebe6b764e971d4.json",
+					"name" : "test_faiss",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "test_rapids::@a44f0ac069e85531cdee",
+					"jsonFile" : "target-test_rapids-Debug-8b7df1cc1cba775317fc.json",
+					"name" : "test_rapids",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "test_similarity::@a44f0ac069e85531cdee",
+					"jsonFile" : "target-test_similarity-Debug-af20791d11810ab545e0.json",
+					"name" : "test_similarity",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "test_vector_data::@a44f0ac069e85531cdee",
+					"jsonFile" : "target-test_vector_data-Debug-93e643cfc19c4ffb0ee8.json",
+					"name" : "test_vector_data",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/build",
+		"source" : "/home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 8
+	}
+}

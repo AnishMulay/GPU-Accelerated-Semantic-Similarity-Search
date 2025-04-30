@@ -1,0 +1,9 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/build/cmake_install.cmake",
+		"/home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/build/src/cmake_install.cmake",
+		"/home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/build/tests/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

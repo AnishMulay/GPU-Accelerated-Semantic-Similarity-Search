@@ -1,4 +1,5 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/test_rapids.dir/link.d"
   "CMakeFiles/test_rapids.dir/cmake_device_link.o"
   "CMakeFiles/test_rapids.dir/test_rapids.cpp.o"
   "CMakeFiles/test_rapids.dir/test_rapids.cpp.o.d"

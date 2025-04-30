@@ -1,4 +1,5 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/test_brute_force_comparison.dir/link.d"
   "CMakeFiles/test_brute_force_comparison.dir/test_brute_force_comparison.cpp.o"
   "CMakeFiles/test_brute_force_comparison.dir/test_brute_force_comparison.cpp.o.d"
   "test_brute_force_comparison"

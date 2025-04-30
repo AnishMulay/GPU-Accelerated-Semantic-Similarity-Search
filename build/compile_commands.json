@@ -1,0 +1,116 @@
+[
+{
+  "directory": "/home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/build",
+  "command": "/usr/bin/c++ -DCUTLASS_NAMESPACE=raft_cutlass -DLIBCUDACXX_ENABLE_EXPERIMENTAL_MEMORY_RESOURCE -DRAFT_LOG_ACTIVE_LEVEL=RAPIDS_LOGGER_LOG_LEVEL_INFO -DRAFT_SYSTEM_LITTLE_ENDIAN=1 -DTHRUST_DEVICE_SYSTEM=THRUST_DEVICE_SYSTEM_CUDA -DTHRUST_DISABLE_ABI_NAMESPACE -DTHRUST_HOST_SYSTEM=THRUST_HOST_SYSTEM_CPP -DTHRUST_IGNORE_ABI_NAMESPACE_ERROR -I/home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/include -I/home/anish/miniconda/include/rapids -I/home/anish/miniconda/include/rapids/libcudacxx -isystem /home/anish/miniconda/include -g -std=gnu++17 -fPIE -fopenmp -o CMakeFiles/semantic_search.dir/src/main.cpp.o -c /home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/src/main.cpp",
+  "file": "/home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/src/main.cpp",
+  "output": "CMakeFiles/semantic_search.dir/src/main.cpp.o"
+},
+{
+  "directory": "/home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/build",
+  "command": "/usr/bin/c++ -I/home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/include -g -std=gnu++17 -o src/CMakeFiles/similarity_utils.dir/utils/data_loader.cpp.o -c /home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/src/utils/data_loader.cpp",
+  "file": "/home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/src/utils/data_loader.cpp",
+  "output": "src/CMakeFiles/similarity_utils.dir/utils/data_loader.cpp.o"
+},
+{
+  "directory": "/home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/build",
+  "command": "/usr/bin/c++ -I/home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/include -g -std=gnu++17 -o src/CMakeFiles/similarity_utils.dir/utils/metrics.cpp.o -c /home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/src/utils/metrics.cpp",
+  "file": "/home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/src/utils/metrics.cpp",
+  "output": "src/CMakeFiles/similarity_utils.dir/utils/metrics.cpp.o"
+},
+{
+  "directory": "/home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/build",
+  "command": "/usr/bin/c++ -I/home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/include -g -std=gnu++17 -o src/CMakeFiles/similarity_utils.dir/utils/timer.cpp.o -c /home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/src/utils/timer.cpp",
+  "file": "/home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/src/utils/timer.cpp",
+  "output": "src/CMakeFiles/similarity_utils.dir/utils/timer.cpp.o"
+},
+{
+  "directory": "/home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/build",
+  "command": "/usr/bin/c++ -I/home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/include -g -std=gnu++17 -o src/CMakeFiles/similarity_utils.dir/utils/vector_data.cpp.o -c /home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/src/utils/vector_data.cpp",
+  "file": "/home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/src/utils/vector_data.cpp",
+  "output": "src/CMakeFiles/similarity_utils.dir/utils/vector_data.cpp.o"
+},
+{
+  "directory": "/home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/build",
+  "command": "/usr/bin/c++ -I/home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/include -g -std=gnu++17 -o src/CMakeFiles/similarity_utils.dir/utils/benchmark.cpp.o -c /home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/src/utils/benchmark.cpp",
+  "file": "/home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/src/utils/benchmark.cpp",
+  "output": "src/CMakeFiles/similarity_utils.dir/utils/benchmark.cpp.o"
+},
+{
+  "directory": "/home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/build",
+  "command": "/usr/bin/c++ -I/home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/include -g -std=gnu++17 -fopenmp -o src/CMakeFiles/cpu_implementations.dir/cpu/brute_force.cpp.o -c /home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/src/cpu/brute_force.cpp",
+  "file": "/home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/src/cpu/brute_force.cpp",
+  "output": "src/CMakeFiles/cpu_implementations.dir/cpu/brute_force.cpp.o"
+},
+{
+  "directory": "/home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/build",
+  "command": "/usr/bin/c++ -I/home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/include -g -std=gnu++17 -fopenmp -o src/CMakeFiles/cpu_implementations.dir/cpu/brute_force_omp.cpp.o -c /home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/src/cpu/brute_force_omp.cpp",
+  "file": "/home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/src/cpu/brute_force_omp.cpp",
+  "output": "src/CMakeFiles/cpu_implementations.dir/cpu/brute_force_omp.cpp.o"
+},
+{
+  "directory": "/home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/build",
+  "command": "/usr/bin/c++ -I/home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/include -g -std=gnu++17 -fopenmp -o src/CMakeFiles/cpu_implementations.dir/cpu/faiss_wrapper.cpp.o -c /home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/src/cpu/faiss_wrapper.cpp",
+  "file": "/home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/src/cpu/faiss_wrapper.cpp",
+  "output": "src/CMakeFiles/cpu_implementations.dir/cpu/faiss_wrapper.cpp.o"
+},
+{
+  "directory": "/home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/build",
+  "command": "/usr/bin/nvcc -forward-unknown-to-host-compiler -DCUTLASS_NAMESPACE=raft_cutlass -DLIBCUDACXX_ENABLE_EXPERIMENTAL_MEMORY_RESOURCE -DRAFT_LOG_ACTIVE_LEVEL=RAPIDS_LOGGER_LOG_LEVEL_INFO -DRAFT_SYSTEM_LITTLE_ENDIAN=1 -DTHRUST_DEVICE_SYSTEM=THRUST_DEVICE_SYSTEM_CUDA -DTHRUST_DISABLE_ABI_NAMESPACE -DTHRUST_HOST_SYSTEM=THRUST_HOST_SYSTEM_CPP -DTHRUST_IGNORE_ABI_NAMESPACE_ERROR -I/home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/include -I/home/anish/miniconda/include/rapids -I/home/anish/miniconda/include/rapids/libcudacxx -isystem /home/anish/miniconda/include -g -std=c++17 -arch=native -Xcompiler=-fPIC --expt-extended-lambda --expt-relaxed-constexpr -x cu -rdc=true -c /home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/src/gpu/cuda_kernels.cu -o src/CMakeFiles/gpu_implementations.dir/gpu/cuda_kernels.cu.o",
+  "file": "/home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/src/gpu/cuda_kernels.cu",
+  "output": "src/CMakeFiles/gpu_implementations.dir/gpu/cuda_kernels.cu.o"
+},
+{
+  "directory": "/home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/build",
+  "command": "/usr/bin/c++ -DCUTLASS_NAMESPACE=raft_cutlass -DLIBCUDACXX_ENABLE_EXPERIMENTAL_MEMORY_RESOURCE -DRAFT_LOG_ACTIVE_LEVEL=RAPIDS_LOGGER_LOG_LEVEL_INFO -DRAFT_SYSTEM_LITTLE_ENDIAN=1 -DTHRUST_DEVICE_SYSTEM=THRUST_DEVICE_SYSTEM_CUDA -DTHRUST_DISABLE_ABI_NAMESPACE -DTHRUST_HOST_SYSTEM=THRUST_HOST_SYSTEM_CPP -DTHRUST_IGNORE_ABI_NAMESPACE_ERROR -I/home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/include -I/home/anish/miniconda/include/rapids -I/home/anish/miniconda/include/rapids/libcudacxx -isystem /home/anish/miniconda/include -g -std=gnu++17 -fPIC -o src/CMakeFiles/gpu_implementations.dir/gpu/cuda_search.cpp.o -c /home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/src/gpu/cuda_search.cpp",
+  "file": "/home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/src/gpu/cuda_search.cpp",
+  "output": "src/CMakeFiles/gpu_implementations.dir/gpu/cuda_search.cpp.o"
+},
+{
+  "directory": "/home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/build",
+  "command": "/usr/bin/c++ -DCUTLASS_NAMESPACE=raft_cutlass -DLIBCUDACXX_ENABLE_EXPERIMENTAL_MEMORY_RESOURCE -DRAFT_LOG_ACTIVE_LEVEL=RAPIDS_LOGGER_LOG_LEVEL_INFO -DRAFT_SYSTEM_LITTLE_ENDIAN=1 -DTHRUST_DEVICE_SYSTEM=THRUST_DEVICE_SYSTEM_CUDA -DTHRUST_DISABLE_ABI_NAMESPACE -DTHRUST_HOST_SYSTEM=THRUST_HOST_SYSTEM_CPP -DTHRUST_IGNORE_ABI_NAMESPACE_ERROR -I/home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/include -I/home/anish/miniconda/include/rapids -I/home/anish/miniconda/include/rapids/libcudacxx -isystem /home/anish/miniconda/include -g -std=gnu++17 -fPIC -o src/CMakeFiles/gpu_implementations.dir/gpu/rapids_wrapper.cpp.o -c /home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/src/gpu/rapids_wrapper.cpp",
+  "file": "/home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/src/gpu/rapids_wrapper.cpp",
+  "output": "src/CMakeFiles/gpu_implementations.dir/gpu/rapids_wrapper.cpp.o"
+},
+{
+  "directory": "/home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/build",
+  "command": "/usr/bin/c++ -I/home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/include -g -std=gnu++17 -fPIE -fopenmp -o src/CMakeFiles/benchmark_app.dir/benchmark_app.cpp.o -c /home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/src/benchmark_app.cpp",
+  "file": "/home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/src/benchmark_app.cpp",
+  "output": "src/CMakeFiles/benchmark_app.dir/benchmark_app.cpp.o"
+},
+{
+  "directory": "/home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/build",
+  "command": "/usr/bin/c++ -I/home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/include -g -std=gnu++17 -fPIE -o tests/CMakeFiles/test_similarity.dir/test_similarity.cpp.o -c /home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/tests/test_similarity.cpp",
+  "file": "/home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/tests/test_similarity.cpp",
+  "output": "tests/CMakeFiles/test_similarity.dir/test_similarity.cpp.o"
+},
+{
+  "directory": "/home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/build",
+  "command": "/usr/bin/c++ -I/home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/include -g -std=gnu++17 -o tests/CMakeFiles/test_vector_data.dir/test_vector_data.cpp.o -c /home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/tests/test_vector_data.cpp",
+  "file": "/home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/tests/test_vector_data.cpp",
+  "output": "tests/CMakeFiles/test_vector_data.dir/test_vector_data.cpp.o"
+},
+{
+  "directory": "/home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/build",
+  "command": "/usr/bin/c++ -I/home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/include -g -std=gnu++17 -fopenmp -o tests/CMakeFiles/test_brute_force_comparison.dir/test_brute_force_comparison.cpp.o -c /home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/tests/test_brute_force_comparison.cpp",
+  "file": "/home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/tests/test_brute_force_comparison.cpp",
+  "output": "tests/CMakeFiles/test_brute_force_comparison.dir/test_brute_force_comparison.cpp.o"
+},
+{
+  "directory": "/home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/build",
+  "command": "/usr/bin/c++ -I/home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/include -g -std=gnu++17 -o tests/CMakeFiles/test_faiss.dir/test_faiss.cpp.o -c /home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/tests/test_faiss.cpp",
+  "file": "/home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/tests/test_faiss.cpp",
+  "output": "tests/CMakeFiles/test_faiss.dir/test_faiss.cpp.o"
+},
+{
+  "directory": "/home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/build",
+  "command": "/usr/bin/c++ -I/home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/include -g -std=gnu++17 -fPIE -o tests/CMakeFiles/test_cuda.dir/test_cuda.cpp.o -c /home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/tests/test_cuda.cpp",
+  "file": "/home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/tests/test_cuda.cpp",
+  "output": "tests/CMakeFiles/test_cuda.dir/test_cuda.cpp.o"
+},
+{
+  "directory": "/home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/build",
+  "command": "/usr/bin/c++ -I/home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/include -g -std=gnu++17 -fPIE -o tests/CMakeFiles/test_rapids.dir/test_rapids.cpp.o -c /home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/tests/test_rapids.cpp",
+  "file": "/home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/tests/test_rapids.cpp",
+  "output": "tests/CMakeFiles/test_rapids.dir/test_rapids.cpp.o"
+}
+]

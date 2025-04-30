@@ -1,0 +1,22 @@
+Benchmark Results
+================
+Vectors: 1000000
+Dimensions: 2048
+Queries: 100
+k: 10
+Date: Sunday 20 April 2025 07:24:34 PM EDT
+
+Benchmarking with:
+  Dataset size: 1000000
+  Dimensions: 2048
+  Queries: 100
+  k: 10
+Generating dataset...
+Generating 1000000 sample vectors with 2048 dimensions
+Generating queries...
+Generating 100 sample vectors with 2048 dimensions
+RAPIDS cuML integration not fully implemented
+Training FAISS IVFPQ index with 1000000 vectors...
+FAISS index trained and populated with 1000000 vectors
+Copying 1000000 vectors to GPU...
+CUDA error at /home/anish/Anish/Projects/GPU-Accelerated-Semantic-Similarity-Search/src/gpu/cuda_kernels.cu:78 - out of memory

@@ -1,4 +1,5 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/test_similarity.dir/link.d"
   "CMakeFiles/test_similarity.dir/cmake_device_link.o"
   "CMakeFiles/test_similarity.dir/test_similarity.cpp.o"
   "CMakeFiles/test_similarity.dir/test_similarity.cpp.o.d"

@@ -1,0 +1,657 @@
+Benchmark Results
+================
+Vectors: 1000
+Dimensions: 2048
+Queries: 100
+k: 10
+Date: Sunday 20 April 2025 06:13:22 PM EDT
+
+Benchmarking with:
+  Dataset size: 1000
+  Dimensions: 2048
+  Queries: 100
+  k: 10
+Generating dataset...
+Generating 1000 sample vectors with 2048 dimensions
+Generating queries...
+Generating 100 sample vectors with 2048 dimensions
+RAPIDS cuML integration not fully implemented
+Training FAISS IVFPQ index with 1000 vectors...
+WARNING clustering 1000 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 1000 points to 256 centroids: please provide at least 9984 training points
+WARNING clustering 1000 points to 256 centroids: please provide at least 9984 training points
+WARNING clustering 1000 points to 256 centroids: please provide at least 9984 training points
+WARNING clustering 1000 points to 256 centroids: please provide at least 9984 training points
+WARNING clustering 1000 points to 256 centroids: please provide at least 9984 training points
+WARNING clustering 1000 points to 256 centroids: please provide at least 9984 training points
+WARNING clustering 1000 points to 256 centroids: please provide at least 9984 training points
+WARNING clustering 1000 points to 256 centroids: please provide at least 9984 training points
+WARNING clustering 1000 points to 256 centroids: please provide at least 9984 training points
+WARNING clustering 1000 points to 256 centroids: please provide at least 9984 training points
+WARNING clustering 1000 points to 256 centroids: please provide at least 9984 training points
+WARNING clustering 1000 points to 256 centroids: please provide at least 9984 training points
+WARNING clustering 1000 points to 256 centroids: please provide at least 9984 training points
+WARNING clustering 1000 points to 256 centroids: please provide at least 9984 training points
+WARNING clustering 1000 points to 256 centroids: please provide at least 9984 training points
+WARNING clustering 1000 points to 256 centroids: please provide at least 9984 training points
+FAISS index trained and populated with 1000 vectors
+Copying 1000 vectors to GPU...
+RAPIDS: Dataset set with 1000 vectors
+Calculating ground truth...
+Calculating ground truth...
+Ground truth calculated for 100 queries
+Running benchmarks...
+Benchmarking CPU Brute Force...
+Search: 10.6381 ms
+Search: 9.95092 ms
+Search: 10.8248 ms
+Search: 10.5785 ms
+Search: 10.0484 ms
+Search: 10.956 ms
+Search: 10.2294 ms
+Search: 10.5948 ms
+Search: 11.0379 ms
+Search: 10.1449 ms
+Search: 10.5769 ms
+Search: 10.6856 ms
+Search: 10.0603 ms
+Search: 10.907 ms
+Search: 10.6131 ms
+Search: 9.99162 ms
+Search: 10.9841 ms
+Search: 10.6393 ms
+Search: 10.2996 ms
+Search: 10.401 ms
+Search: 10.1223 ms
+Search: 10.8421 ms
+Search: 10.8409 ms
+Search: 10.2063 ms
+Search: 10.8813 ms
+Search: 10.481 ms
+Search: 10.069 ms
+Search: 10.5604 ms
+Search: 10.3269 ms
+Search: 10.3391 ms
+Search: 10.6161 ms
+Search: 9.95964 ms
+Search: 10.5328 ms
+Search: 10.4764 ms
+Search: 10.1257 ms
+Search: 10.7929 ms
+Search: 10.3101 ms
+Search: 10.2724 ms
+Search: 10.5999 ms
+Search: 9.98662 ms
+Search: 11.2454 ms
+Search: 11.2107 ms
+Search: 10.2166 ms
+Search: 12.1978 ms
+Search: 10.5844 ms
+Search: 9.93716 ms
+Search: 10.8482 ms
+Search: 10.5433 ms
+Search: 10.1251 ms
+Search: 10.5149 ms
+Search: 10.2404 ms
+Search: 10.508 ms
+Search: 11.0697 ms
+Search: 9.98667 ms
+Search: 11.2557 ms
+Search: 11.2649 ms
+Search: 10.0362 ms
+Search: 10.6341 ms
+Search: 10.5473 ms
+Search: 10.2461 ms
+Search: 11.2135 ms
+Search: 10.3717 ms
+Search: 10.4861 ms
+Search: 10.5002 ms
+Search: 10.0569 ms
+Search: 10.653 ms
+Search: 10.9034 ms
+Search: 10.1092 ms
+Search: 11.6854 ms
+Search: 10.3429 ms
+Search: 10.4543 ms
+Search: 11.094 ms
+Search: 10.5255 ms
+Search: 10.3737 ms
+Search: 11.0688 ms
+Search: 10.0435 ms
+Search: 10.4197 ms
+Search: 10.8769 ms
+Search: 9.95864 ms
+Search: 11.0665 ms
+Search: 10.7815 ms
+Search: 10.1216 ms
+Search: 10.4643 ms
+Search: 10.037 ms
+Search: 10.5293 ms
+Search: 10.6649 ms
+Search: 9.95553 ms
+Search: 10.6618 ms
+Search: 10.2623 ms
+Search: 10.0836 ms
+Search: 10.8975 ms
+Search: 10.0223 ms
+Search: 12.8705 ms
+Search: 11.5155 ms
+Search: 11.0199 ms
+Search: 10.403 ms
+Search: 10.8707 ms
+Search: 10.6948 ms
+Search: 10.4764 ms
+Search: 10.8242 ms
+Benchmarking CPU Brute Force (OpenMP)...
+Search: 2.30898 ms
+Search: 2.12416 ms
+Search: 2.06889 ms
+Search: 2.06646 ms
+Search: 2.17786 ms
+Search: 2.46501 ms
+Search: 2.32961 ms
+Search: 2.32163 ms
+Search: 3.03283 ms
+Search: 2.00776 ms
+Search: 2.44073 ms
+Search: 3.81018 ms
+Search: 3.18805 ms
+Search: 2.31938 ms
+Search: 2.48973 ms
+Search: 2.31371 ms
+Search: 2.32893 ms
+Search: 3.60886 ms
+Search: 4.51722 ms
+Search: 2.6157 ms
+Search: 2.31232 ms
+Search: 2.349 ms
+Search: 2.47007 ms
+Search: 4.99526 ms
+Search: 2.3005 ms
+Search: 2.40376 ms
+Search: 2.3746 ms
+Search: 2.7428 ms
+Search: 4.01944 ms
+Search: 2.66242 ms
+Search: 2.4131 ms
+Search: 2.44164 ms
+Search: 2.50193 ms
+Search: 2.48387 ms
+Search: 3.4293 ms
+Search: 3.20393 ms
+Search: 2.73002 ms
+Search: 2.55989 ms
+Search: 2.67616 ms
+Search: 2.57117 ms
+Search: 4.38158 ms
+Search: 3.5038 ms
+Search: 2.50315 ms
+Search: 2.49334 ms
+Search: 2.47429 ms
+Search: 3.10458 ms
+Search: 3.85598 ms
+Search: 2.48523 ms
+Search: 2.49843 ms
+Search: 3.00509 ms
+Search: 2.50036 ms
+Search: 3.13912 ms
+Search: 4.14426 ms
+Search: 2.52683 ms
+Search: 2.48088 ms
+Search: 2.53115 ms
+Search: 2.91902 ms
+Search: 3.93745 ms
+Search: 2.42349 ms
+Search: 2.33054 ms
+Search: 2.63693 ms
+Search: 2.40109 ms
+Search: 5.66927 ms
+Search: 2.21925 ms
+Search: 14.1136 ms
+Search: 7.41223 ms
+Search: 2.20615 ms
+Search: 5.7737 ms
+Search: 2.76379 ms
+Search: 2.28309 ms
+Search: 2.34933 ms
+Search: 2.73538 ms
+Search: 3.10844 ms
+Search: 4.35955 ms
+Search: 2.40504 ms
+Search: 2.34312 ms
+Search: 2.45804 ms
+Search: 2.61126 ms
+Search: 4.31566 ms
+Search: 2.52354 ms
+Search: 2.47012 ms
+Search: 2.56679 ms
+Search: 2.42275 ms
+Search: 3.48648 ms
+Search: 3.60074 ms
+Search: 2.70083 ms
+Search: 2.55745 ms
+Search: 2.43735 ms
+Search: 2.6665 ms
+Search: 4.15503 ms
+Search: 2.34839 ms
+Search: 2.49463 ms
+Search: 2.6454 ms
+Search: 2.44398 ms
+Search: 4.73859 ms
+Search: 2.82649 ms
+Search: 2.65063 ms
+Search: 2.42455 ms
+Search: 2.53827 ms
+Search: 3.16339 ms
+Benchmarking FAISS IVFPQ...
+Search: 4.64349 ms
+Search: 3.84389 ms
+Search: 2.00429 ms
+Search: 4.31959 ms
+Search: 0.754481 ms
+Search: 2.41732 ms
+Search: 1.88686 ms
+Search: 0.664193 ms
+Search: 0.555432 ms
+Search: 0.574374 ms
+Search: 0.635625 ms
+Search: 0.527294 ms
+Search: 0.580222 ms
+Search: 0.555421 ms
+Search: 0.583371 ms
+Search: 0.59948 ms
+Search: 0.530256 ms
+Search: 0.534491 ms
+Search: 0.501709 ms
+Search: 0.55183 ms
+Search: 0.524118 ms
+Search: 0.533163 ms
+Search: 0.51944 ms
+Search: 0.538846 ms
+Search: 0.603334 ms
+Search: 0.859102 ms
+Search: 0.91989 ms
+Search: 0.977604 ms
+Search: 0.758937 ms
+Search: 1.12881 ms
+Search: 0.558084 ms
+Search: 0.761282 ms
+Search: 0.544956 ms
+Search: 0.548223 ms
+Search: 0.600378 ms
+Search: 0.604333 ms
+Search: 0.619488 ms
+Search: 0.552038 ms
+Search: 0.545037 ms
+Search: 0.510919 ms
+Search: 0.571445 ms
+Search: 0.571364 ms
+Search: 0.566952 ms
+Search: 0.541179 ms
+Search: 0.610684 ms
+Search: 0.530555 ms
+Search: 0.497456 ms
+Search: 0.522933 ms
+Search: 0.556607 ms
+Search: 0.531186 ms
+Search: 0.785297 ms
+Search: 0.915941 ms
+Search: 1.11577 ms
+Search: 1.08527 ms
+Search: 0.81487 ms
+Search: 1.25561 ms
+Search: 0.637829 ms
+Search: 0.668279 ms
+Search: 0.504016 ms
+Search: 0.538458 ms
+Search: 0.537989 ms
+Search: 0.55811 ms
+Search: 0.484497 ms
+Search: 0.475028 ms
+Search: 0.494203 ms
+Search: 0.515549 ms
+Search: 0.523643 ms
+Search: 0.653071 ms
+Search: 0.702346 ms
+Search: 0.567342 ms
+Search: 0.53072 ms
+Search: 0.586063 ms
+Search: 0.543541 ms
+Search: 0.637919 ms
+Search: 1.02662 ms
+Search: 1.51207 ms
+Search: 1.20186 ms
+Search: 0.66341 ms
+Search: 1.16428 ms
+Search: 0.584347 ms
+Search: 0.63112 ms
+Search: 0.558832 ms
+Search: 0.525026 ms
+Search: 0.638563 ms
+Search: 0.557111 ms
+Search: 0.587833 ms
+Search: 0.506354 ms
+Search: 0.494176 ms
+Search: 0.515563 ms
+Search: 0.513328 ms
+Search: 0.565795 ms
+Search: 0.54222 ms
+Search: 0.583394 ms
+Search: 0.567356 ms
+Search: 0.648267 ms
+Search: 0.640773 ms
+Search: 0.534392 ms
+Search: 0.501344 ms
+Search: 1.09631 ms
+Search: 1.35579 ms
+Benchmarking CUDA Cosine Similarity...
+Search: 3.0875 ms
+Search: 0.88324 ms
+Search: 0.72565 ms
+Search: 0.729451 ms
+Search: 0.721391 ms
+Search: 0.727536 ms
+Search: 0.718003 ms
+Search: 0.71948 ms
+Search: 0.721345 ms
+Search: 0.715441 ms
+Search: 0.717083 ms
+Search: 0.753285 ms
+Search: 0.809263 ms
+Search: 0.857909 ms
+Search: 1.1048 ms
+Search: 0.820232 ms
+Search: 0.770275 ms
+Search: 0.714922 ms
+Search: 0.729278 ms
+Search: 0.718166 ms
+Search: 0.723304 ms
+Search: 0.719238 ms
+Search: 0.776146 ms
+Search: 0.732607 ms
+Search: 0.723078 ms
+Search: 0.716441 ms
+Search: 0.721676 ms
+Search: 0.725542 ms
+Search: 0.730043 ms
+Search: 0.728274 ms
+Search: 0.735999 ms
+Search: 0.737655 ms
+Search: 0.750546 ms
+Search: 0.743135 ms
+Search: 0.861048 ms
+Search: 1.1199 ms
+Search: 1.03546 ms
+Search: 0.807431 ms
+Search: 0.731458 ms
+Search: 0.722534 ms
+Search: 0.732738 ms
+Search: 0.731678 ms
+Search: 0.730144 ms
+Search: 0.72555 ms
+Search: 0.729055 ms
+Search: 0.715801 ms
+Search: 0.735367 ms
+Search: 0.734226 ms
+Search: 0.717372 ms
+Search: 0.711981 ms
+Search: 0.719156 ms
+Search: 0.717533 ms
+Search: 0.714678 ms
+Search: 0.782043 ms
+Search: 0.897014 ms
+Search: 0.997402 ms
+Search: 1.24192 ms
+Search: 1.11004 ms
+Search: 0.735609 ms
+Search: 0.710403 ms
+Search: 0.713973 ms
+Search: 0.722429 ms
+Search: 0.712931 ms
+Search: 0.712752 ms
+Search: 0.727338 ms
+Search: 0.713899 ms
+Search: 0.71918 ms
+Search: 0.719425 ms
+Search: 0.712968 ms
+Search: 0.717828 ms
+Search: 0.744865 ms
+Search: 0.741207 ms
+Search: 0.720833 ms
+Search: 0.740834 ms
+Search: 0.81011 ms
+Search: 0.96159 ms
+Search: 1.16302 ms
+Search: 1.05099 ms
+Search: 0.840515 ms
+Search: 0.750641 ms
+Search: 0.747761 ms
+Search: 0.758013 ms
+Search: 0.751149 ms
+Search: 0.754022 ms
+Search: 0.751596 ms
+Search: 0.758527 ms
+Search: 0.767272 ms
+Search: 0.769943 ms
+Search: 0.762053 ms
+Search: 0.748479 ms
+Search: 0.758166 ms
+Search: 0.747118 ms
+Search: 0.749666 ms
+Search: 0.747462 ms
+Search: 0.769178 ms
+Search: 0.783966 ms
+Search: 0.798703 ms
+Search: 0.812718 ms
+Search: 0.818592 ms
+Search: 0.834977 ms
+Benchmarking RAPIDS cuML...
+RAPIDS: Search called, but not fully implemented
+Search: 0.007317 ms
+RAPIDS: Search called, but not fully implemented
+Search: 0.00528 ms
+RAPIDS: Search called, but not fully implemented
+Search: 0.004872 ms
+RAPIDS: Search called, but not fully implemented
+Search: 0.003889 ms
+RAPIDS: Search called, but not fully implemented
+Search: 0.005025 ms
+RAPIDS: Search called, but not fully implemented
+Search: 0.00383 ms
+RAPIDS: Search called, but not fully implemented
+Search: 0.003752 ms
+RAPIDS: Search called, but not fully implemented
+Search: 0.003854 ms
+RAPIDS: Search called, but not fully implemented
+Search: 0.005451 ms
+RAPIDS: Search called, but not fully implemented
+Search: 0.003835 ms
+RAPIDS: Search called, but not fully implemented
+Search: 0.003853 ms
+RAPIDS: Search called, but not fully implemented
+Search: 0.019277 ms
+RAPIDS: Search called, but not fully implemented
+Search: 0.004694 ms
+RAPIDS: Search called, but not fully implemented
+Search: 0.003757 ms
+RAPIDS: Search called, but not fully implemented
+Search: 0.003672 ms
+RAPIDS: Search called, but not fully implemented
+Search: 0.003687 ms
+RAPIDS: Search called, but not fully implemented
+Search: 0.006221 ms
+RAPIDS: Search called, but not fully implemented
+Search: 0.003754 ms
+RAPIDS: Search called, but not fully implemented
+Search: 0.003593 ms
+RAPIDS: Search called, but not fully implemented
+Search: 0.003652 ms
+RAPIDS: Search called, but not fully implemented
+Search: 0.003614 ms
+RAPIDS: Search called, but not fully implemented
+Search: 0.003602 ms
+RAPIDS: Search called, but not fully implemented
+Search: 0.003649 ms
+RAPIDS: Search called, but not fully implemented
+Search: 0.003629 ms
+RAPIDS: Search called, but not fully implemented
+Search: 0.003693 ms
+RAPIDS: Search called, but not fully implemented
+Search: 0.004303 ms
+RAPIDS: Search called, but not fully implemented
+Search: 0.004374 ms
+RAPIDS: Search called, but not fully implemented
+Search: 0.003733 ms
+RAPIDS: Search called, but not fully implemented
+Search: 0.006311 ms
+RAPIDS: Search called, but not fully implemented
+Search: 0.003673 ms
+RAPIDS: Search called, but not fully implemented
+Search: 0.014455 ms
+RAPIDS: Search called, but not fully implemented
+Search: 0.003716 ms
+RAPIDS: Search called, but not fully implemented
+Search: 0.008454 ms
+RAPIDS: Search called, but not fully implemented
+Search: 0.003633 ms
+RAPIDS: Search called, but not fully implemented
+Search: 0.003594 ms
+RAPIDS: Search called, but not fully implemented
+Search: 0.003663 ms
+RAPIDS: Search called, but not fully implemented
+Search: 0.003627 ms
+RAPIDS: Search called, but not fully implemented
+Search: 0.005153 ms
+RAPIDS: Search called, but not fully implemented
+Search: 0.003821 ms
+RAPIDS: Search called, but not fully implemented
+Search: 0.003745 ms
+RAPIDS: Search called, but not fully implemented
+Search: 0.00371 ms
+RAPIDS: Search called, but not fully implemented
+Search: 0.003617 ms
+RAPIDS: Search called, but not fully implemented
+Search: 0.003656 ms
+RAPIDS: Search called, but not fully implemented
+Search: 0.003579 ms
+RAPIDS: Search called, but not fully implemented
+Search: 0.003573 ms
+RAPIDS: Search called, but not fully implemented
+Search: 0.003675 ms
+RAPIDS: Search called, but not fully implemented
+Search: 0.003697 ms
+RAPIDS: Search called, but not fully implemented
+Search: 0.003608 ms
+RAPIDS: Search called, but not fully implemented
+Search: 0.003729 ms
+RAPIDS: Search called, but not fully implemented
+Search: 0.003666 ms
+RAPIDS: Search called, but not fully implemented
+Search: 0.00448 ms
+RAPIDS: Search called, but not fully implemented
+Search: 0.00377 ms
+RAPIDS: Search called, but not fully implemented
+Search: 0.00371 ms
+RAPIDS: Search called, but not fully implemented
+Search: 0.00364 ms
+RAPIDS: Search called, but not fully implemented
+Search: 0.003663 ms
+RAPIDS: Search called, but not fully implemented
+Search: 0.003689 ms
+RAPIDS: Search called, but not fully implemented
+Search: 0.003631 ms
+RAPIDS: Search called, but not fully implemented
+Search: 0.003684 ms
+RAPIDS: Search called, but not fully implemented
+Search: 0.003651 ms
+RAPIDS: Search called, but not fully implemented
+Search: 0.003629 ms
+RAPIDS: Search called, but not fully implemented
+Search: 0.003715 ms
+RAPIDS: Search called, but not fully implemented
+Search: 0.003675 ms
+RAPIDS: Search called, but not fully implemented
+Search: 0.003713 ms
+RAPIDS: Search called, but not fully implemented
+Search: 0.004455 ms
+RAPIDS: Search called, but not fully implemented
+Search: 0.01168 ms
+RAPIDS: Search called, but not fully implemented
+Search: 0.003795 ms
+RAPIDS: Search called, but not fully implemented
+Search: 0.003709 ms
+RAPIDS: Search called, but not fully implemented
+Search: 0.003623 ms
+RAPIDS: Search called, but not fully implemented
+Search: 0.003669 ms
+RAPIDS: Search called, but not fully implemented
+Search: 0.0037 ms
+RAPIDS: Search called, but not fully implemented
+Search: 0.003692 ms
+RAPIDS: Search called, but not fully implemented
+Search: 0.003585 ms
+RAPIDS: Search called, but not fully implemented
+Search: 0.00358 ms
+RAPIDS: Search called, but not fully implemented
+Search: 0.003666 ms
+RAPIDS: Search called, but not fully implemented
+Search: 0.003629 ms
+RAPIDS: Search called, but not fully implemented
+Search: 0.003645 ms
+RAPIDS: Search called, but not fully implemented
+Search: 0.004066 ms
+RAPIDS: Search called, but not fully implemented
+Search: 0.003697 ms
+RAPIDS: Search called, but not fully implemented
+Search: 0.0037 ms
+RAPIDS: Search called, but not fully implemented
+Search: 0.003607 ms
+RAPIDS: Search called, but not fully implemented
+Search: 0.003599 ms
+RAPIDS: Search called, but not fully implemented
+Search: 0.003616 ms
+RAPIDS: Search called, but not fully implemented
+Search: 0.003636 ms
+RAPIDS: Search called, but not fully implemented
+Search: 0.003731 ms
+RAPIDS: Search called, but not fully implemented
+Search: 0.003644 ms
+RAPIDS: Search called, but not fully implemented
+Search: 0.003724 ms
+RAPIDS: Search called, but not fully implemented
+Search: 0.003618 ms
+RAPIDS: Search called, but not fully implemented
+Search: 0.003695 ms
+RAPIDS: Search called, but not fully implemented
+Search: 0.003715 ms
+RAPIDS: Search called, but not fully implemented
+Search: 0.004116 ms
+RAPIDS: Search called, but not fully implemented
+Search: 0.010295 ms
+RAPIDS: Search called, but not fully implemented
+Search: 0.003711 ms
+RAPIDS: Search called, but not fully implemented
+Search: 0.003711 ms
+RAPIDS: Search called, but not fully implemented
+Search: 0.006053 ms
+RAPIDS: Search called, but not fully implemented
+Search: 0.003686 ms
+RAPIDS: Search called, but not fully implemented
+Search: 0.003674 ms
+RAPIDS: Search called, but not fully implemented
+Search: 0.003676 ms
+RAPIDS: Search called, but not fully implemented
+Search: 0.003659 ms
+RAPIDS: Search called, but not fully implemented
+Search: 0.003679 ms
+RAPIDS: Search called, but not fully implemented
+Search: 0.003632 ms
+
+=== Benchmark Results ===
+Algorithm                Avg Time (ms)  p50 (ms)       p95 (ms)       p99 (ms)       QPS            Recall@        10Memory (MB)    
+------------------------------------------------------------------------------------------------------------------------
+CPU Brute Force          10.56          10.52          11.25          12.87          94.66          1.0000         7.81           
+CPU Brute Force (OpenMP) 3.01           2.53           4.99           14.10          332.22         1.0000         7.81           
+FAISS IVFPQ              0.80           0.57           2.00           4.64           1245.23        1.0000         11.72          
+CUDA Cosine Similarity   0.80           0.74           1.10           3.08           1252.00        1.0000         15.62          
+RAPIDS cuML              0.00           0.00           0.00           0.02           299770.97      0.0000         15.62          

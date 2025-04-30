@@ -41,7 +41,25 @@ set_target_properties(gpu_implementations PROPERTIES
 )
 
 # Link with CUDA
-target_link_libraries(gpu_implementations PRIVATE ${CUDA_LIBRARIES})
+target_link_libraries(gpu_implementations PRIVATE 
+    ${CUDA_LIBRARIES}
+    raft::raft
+    raft::compiled
+)
+
+target_compile_options(gpu_implementations PRIVATE 
+    $<$<COMPILE_LANGUAGE:CUDA>:--expt-extended-lambda --expt-relaxed-constexpr>
+)
+
+set_target_properties(gpu_implementations
+    PROPERTIES 
+    CXX_STANDARD 17
+    CXX_STANDARD_REQUIRED ON
+    CUDA_STANDARD 17
+    CUDA_STANDARD_REQUIRED ON
+    POSITION_INDEPENDENT_CODE ON
+    INTERFACE_POSITION_INDEPENDENT_CODE ON
+)
 
 # Create benchmarking application
 add_executable(benchmark_app benchmark_app.cpp)

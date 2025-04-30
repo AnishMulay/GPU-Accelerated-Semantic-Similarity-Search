@@ -1,4 +1,5 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/test_vector_data.dir/link.d"
   "CMakeFiles/test_vector_data.dir/test_vector_data.cpp.o"
   "CMakeFiles/test_vector_data.dir/test_vector_data.cpp.o.d"
   "test_vector_data"

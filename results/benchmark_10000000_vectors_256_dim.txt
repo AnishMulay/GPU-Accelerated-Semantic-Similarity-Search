@@ -1,0 +1,17 @@
+Benchmark Results
+================
+Vectors: 10000000
+Dimensions: 256
+Queries: 100
+k: 10
+Date: Sunday 20 April 2025 08:40:24 PM EDT
+
+Benchmarking with:
+  Dataset size: 10000000
+  Dimensions: 256
+  Queries: 100
+  k: 10
+Generating dataset...
+Generating 10000000 sample vectors with 256 dimensions
+terminate called after throwing an instance of 'std::bad_alloc'
+  what():  std::bad_alloc
