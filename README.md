@@ -4,31 +4,31 @@
 
 Accelerated semantic similarity search that leverages CPU and GPU parallelization techniques. This project implements and compares five different approaches to vector similarity search, with a focus on performance optimization.
 
-## 📋 Overview
+## Overview
 
 This project investigates the performance of different semantic similarity search implementations across CPU and GPU architectures. By implementing and benchmarking multiple approaches, it provides insights into the scalability and efficiency of various parallelization techniques for high-dimensional vector operations.
 
 ### Key Features
 
 - **Multiple Implementations**:
-  - 🔍 CPU Brute Force (single-threaded baseline)
-  - 🧵 CPU Brute Force with OpenMP (multi-threaded)
-  - 📚 FAISS IVFPQ (optimized CPU with approximate nearest neighbor search)
-  - 🚀 Custom CUDA implementation (GPU-accelerated brute force)
-  - 🔥 RAPIDS cuML integration (state-of-the-art GPU library)
+  - CPU Brute Force (single-threaded baseline)
+  - CPU Brute Force with OpenMP (multi-threaded)
+  - FAISS IVFPQ (optimized CPU with approximate nearest neighbor search)
+  - Custom CUDA implementation (GPU-accelerated brute force)
+  - RAPIDS cuML integration (state-of-the-art GPU library)
 
 - **Comprehensive Benchmarking**:
-  - ⏱️ Query latency (p50, p95, p99)
-  - 📈 Throughput (queries per second)
-  - 🎯 Recall@10 accuracy
-  - 💾 Memory utilization
+  - Query latency (p50, p95, p99)
+  - Throughput (queries per second)
+  - Recall@10 accuracy
+  - Memory utilization
 
 - **Optimized Vector Operations**:
   - Cosine similarity calculations
   - K-nearest neighbor search
   - Efficient vector data management
 
-## 🧩 Project Structure
+## Project Structure
 
 ```
 semantic_search_project/
@@ -36,7 +36,6 @@ semantic_search_project/
 ├── src/
 │   ├── main.cpp                  # Main executable
 │   ├── benchmark_app.cpp         # Benchmarking application
-│   ├── analysis_app.cpp          # Analysis application
 │   ├── utils/                    # Utility classes
 │   │   ├── data_loader.cpp       # Vector data loading
 │   │   ├── timer.cpp             # Performance timing
@@ -53,20 +52,17 @@ semantic_search_project/
 │       └── rapids_wrapper.cpp    # RAPIDS cuML wrapper
 ├── include/                      # Header files
 │   ├── similarity_search.h       # Base interface
-│   ├── vector_data.h             # Vector data class
 │   ├── utils/                    # Utility headers
 │   ├── cpu/                      # CPU implementation headers
 │   └── gpu/                      # GPU implementation headers
 ├── tests/                        # Test suite
 │   ├── test_vector_data.cpp      # Vector data tests
+│   ├── test_similarity.cpp       # Similarity/Correctness tests
 │   ├── test_brute_force.cpp      # CPU tests
 │   ├── test_cuda.cpp             # CUDA tests
 │   └── test_faiss.cpp            # FAISS tests
-├── data/                         # Data directory
-│   └── README.md                 # Data description
-├── scripts/                      # Helper scripts
+│   ├── test_rapids.cpp           # RAPIS CUML tests
 ├── build/                        # Build directory
-├── INSTALL.md                    # Detailed installation guide
 └── LICENSE                       # License information
 ```
 
@@ -210,7 +206,7 @@ RAPIDS cuML advantages:
 
 For complete results across all dataset sizes and dimensions, see the [full benchmark report](https://github.com/yourusername/semantic-search-gpu/blob/main/docs/benchmarks.md).
 
-## 🚀 Usage
+## Usage
 
 ### Building the Project
 
@@ -273,7 +269,7 @@ int main() {
 }
 ```
 
-## 🔧 Contributing
+## Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
 
@@ -287,13 +283,13 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - The instructor and teaching assistants of the CSC 548 Parallel Systems course for their guidance
 - The FAISS team at Facebook Research for their excellent library
 - The RAPIDS team at NVIDIA for their GPU-accelerated ML ecosystem
 
-## 📚 References
+## References
 
 - [FAISS GitHub Repository](https://github.com/facebookresearch/faiss)
 - [RAPIDS cuML Documentation](https://docs.rapids.ai/api/cuml/stable/)
