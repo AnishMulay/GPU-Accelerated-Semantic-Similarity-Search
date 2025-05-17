@@ -1,8 +1,4 @@
-# README.md
-
 # Semantic Similarity Search with GPU Acceleration
-
-Accelerated semantic similarity search that leverages CPU and GPU parallelization techniques. This project implements and compares five different approaches to vector similarity search, with a focus on performance optimization.
 
 ## Overview
 
@@ -23,15 +19,10 @@ This project investigates the performance of different semantic similarity searc
   - Recall@10 accuracy
   - Memory utilization
 
-- **Optimized Vector Operations**:
-  - Cosine similarity calculations
-  - K-nearest neighbor search
-  - Efficient vector data management
-
 ## Project Structure
 
 ```
-semantic_search_project/
+GPU-Accelerated-Semantic-Similarity-Search/
 ├── CMakeLists.txt                # Main CMake configuration
 ├── src/
 │   ├── main.cpp                  # Main executable
@@ -66,7 +57,7 @@ semantic_search_project/
 └── LICENSE                       # License information
 ```
 
-## 🔬 Implementation Details
+## Implementation Details
 
 ### Vector Data Management
 
@@ -101,6 +92,25 @@ Key optimization: Storing vectors in a flattened array rather than as separate o
 #### 1. Baseline CPU (Brute Force)
 
 The baseline implementation computes cosine similarity between the query vector and each database vector sequentially:
+```cpp
+float cosineSimilarity(const float* a, const float* b, size_t dimensions) {
+    float dotProduct = 0.0f;
+    float normA = 0.0f;
+    float normB = 0.0f;
+    
+    for (size_t i = 0; i < dimensions; i++) {
+        dotProduct += a[i] * b[i];
+        normA += a[i] * a[i];
+        normB += b[i] * b[i];
+    }
+    
+    return dotProduct / (std::sqrt(normA) * std::sqrt(normB));
+}
+
+```
+
+#### 2. OpenMP
+The OpenMP implementation parallelizes the similarity calculations across available CPU cores:
 
 ```cpp
 float cosineSimilarity(const float* a, const float* b, size_t dimensions) {
